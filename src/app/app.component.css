@@ -1,0 +1,31 @@
+/* .custom-canvas{
+    width: 72px;
+    visibility: visible;
+    transform: none;
+    overflow: hidden;
+    transition: width .6s;
+}
+.offcanvas.showing, .offcanvas.show:not(.hiding){width: 264px; transition: width .6s;}
+.sidebar-nav{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.sidebar-nav li a{
+    display: flex;
+    padding: 6px 0;
+}
+.sidebar-nav li a .icon{
+    display: flex;
+    justify-content: center;
+    min-width: 72px;
+}
+.sidebar-nav li:hover{
+    background-color: #fff;
+    width: 264px;
+    z-index: 9999;
+    overflow: visible;
+
+} */
