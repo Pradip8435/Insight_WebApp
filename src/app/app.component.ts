@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery'
 
 @Component({
@@ -6,10 +6,9 @@ import * as $ from 'jquery'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit{
   title = 'CORPOSITORY INSIGHT';
-
-
   display = true;
 
   HideShow() {
@@ -31,7 +30,5 @@ export class AppComponent {
       empSearch.attr('placeholder', 'Search ' + select_designatfirst.find(':selected').text());
     });
 
-
   }
 }
-

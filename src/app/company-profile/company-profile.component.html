@@ -4,8 +4,9 @@
             <div class="title-left-sec">
                 <i class="bi bi-building"></i>
                 <span class="tabs-name">Profile</span>
-                <a href="#"><i class="bi bi-info-circle"></i></a>
-                <a href="#" class="text-danger"><i class="bi bi-exclamation-triangle"></i></a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#profile"><i class="bi bi-info-circle"></i></a>
+                <a href="#" class="text-danger" data-bs-toggle="modal" data-bs-target="#disclaimer"><i
+                        class="bi bi-exclamation-triangle"></i></a>
                 <span class="AsOndate">As On : <span>03/03/2021</span></span>
             </div>
             <div>
@@ -20,207 +21,550 @@
                     <h3>company details</h3>
                 </div>
                 <div class="card-body">
-                  <ul class="card-list-item">
-                    <li>
-                        <div class="list-title">CATEGORY</div>
-                        <div class="list-details">Company limited by Shares</div>
-                    </li>
-                    <li>
-                        <div class="list-title">CIN</div>
-                        <div class="list-details">L14292TG1973GOI001660</div>
-                    </li>
-                    <li>
-                        <div class="list-title">NAME</div>
-                        <div class="list-details">
-                            <div class="text-start">
-                                Hubtown Limited
+                    <ul class="card-list-item">
+                        <li>
+                            <div class="list-title">CATEGORY</div>
+                            <div class="list-details">Company limited by Shares</div>
+                        </li>
+                        <li>
+                            <div class="list-title">CIN</div>
+                            <div class="list-details">L14292TG1973GOI001660</div>
+                        </li>
+                        <li>
+                            <div class="list-title">NAME</div>
+                            <div class="list-details">
+                                <div class="text-start">
+                                    Hubtown Limited
+                                </div>
+                                <div class="text-end">
+                                    <span class="old-name"><a href="#" data-bs-toggle="modal" data-bs-target="#oldname"
+                                            class="text-bold">OLD NAME</a></span>
+                                </div>
                             </div>
-                            <div class="text-end">
-                                <strong><a href="" class="text-bold">OLD NAME</a></strong>
+                        </li>
+                        <li>
+                            <div class="list-title">SUB CATEGORY</div>
+                            <div class="list-details">Non-govt company</div>
+                        </li>
+                        <li>
+                            <div class="list-title">TYPE</div>
+                            <div class="list-details">Non-govt company, Public, Listed</div>
+                        </li>
+                        <li>
+                            <div class="list-title">AUTHORIZED CAPITAL</div>
+                            <div class="list-details">₹ 1,250,000,000</div>
+                        </li>
+                        <li>
+                            <div class="list-title">PAID UP CAPITAL</div>
+                            <div class="list-details">₹ 763,358,710</div>
+                        </li>
+                        <li>
+                            <div class="list-title">STATUS</div>
+                            <div class="list-details">Active</div>
+                        </li>
+                        <li>
+                            <div class="list-title">NSE SECTOR</div>
+                            <div class="list-details">Residential Commercial Projects</div>
+                        </li>
+                        <li>
+                            <div class="list-title">CORPOSITORY SECTOR</div>
+                            <div class="list-details">CONSTRUCTION & CONTRACTING - CIVIL</div>
+                        </li>
+                        <li>
+                            <div class="list-title">PRODUCT/SERVICES</div>
+                            <div class="list-details">Sale of properties / rights (Net)</div>
+                        </li>
+                        <li>
+                            <div class="list-title">PAN</div>
+                            <div class="list-details">AAACA6101D</div>
+                        </li>
+                        <li>
+                            <div class="list-title">LEI</div>
+                            <div class="list-details"> - </div>
+                        </li>
+                        <li>
+                            <div class="list-title">REMARKS</div>
+                            <div class="list-details"> - </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 co-xs-12">
+            <div class="card custom-card">
+                <div class="card-header">
+                    <h3>important dates</h3>
+                </div>
+                <div class="card-body">
+                    <div class="timeline-block">
+                        <div class="timeline-dots"></div>
+                        <div class="timeline-content">
+                            <div class="list-title">DATE OF INCORPORATION</div>
+                            <div class="list-details justify-content-end">16/02/1989</div>
+                        </div>
+                    </div>
+                    <div class="timeline-block">
+                        <div class="timeline-dots"></div>
+                        <div class="timeline-content">
+                            <div class="list-title">DATE OF LAST BALANCE SHEET</div>
+                            <div class="list-details">31/03/2022 <a href="#" data-bs-toggle="tooltip"
+                                    title="Balance sheet date as per data available from MCA"><i
+                                        class="bi bi-info-circle"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="timeline-block">
+                        <div class="timeline-dots"></div>
+                        <div class="timeline-content">
+                            <div class="list-title">DATE OF LAST AGM</div>
+                            <div class="list-details justify-content-end">29/09/2022</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card custom-card">
+                <div class="card-header">
+                    <h3>Bureau Analyzer</h3>
+                </div>
+                <div class="card-body">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#uploadPdf"><i class="bi bi-upload"></i> Upload PDF</a>
+                </div>
+            </div>
+            <div class="card custom-card">
+                <div class="card-header">
+                    <h3>GST Details</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="card-list-item">
+                        <li>
+                            <div class="list-details"><span>GST Addresses</span> <span><a href="#" data-bs-toggle="modal" data-bs-target="#gstAddress">Click here</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-details">Kindly place GST request to view further details.</div>
+                            <button class="btn btn-teal btn-teal-outline">Place GST Request</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card custom-card">
+                <div class="card-header">
+                    <h3>Bank Statement Analyzer</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="card-list-item">
+                        <li>
+                            <div class="list-details">Kindly place new request to analyze bank statements</div>
+                            <a href="#">Click here</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 co-xs-12">
+            <div class="card custom-card">
+                <div class="card-header">
+                    <h3>flags</h3>
+                </div>
+                <div class="card-body">
+                    <div class="list-details">
+                        <span>Alerts/Flag counts</span>
+                        <span class="text-end">
+                            <button class="flag-btn green-flag"><i class="bi bi-flag-fill"></i> (0)</button>
+                            <button class="flag-btn yellow-flag"><i class="bi bi-flag-fill"></i> (10)</button>
+                            <button class="flag-btn red-flag"><i class="bi bi-flag-fill"></i> (5)</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card custom-card">
+                <div class="card-header">
+                    <h3>Contact Details</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="card-list-item">
+                        <div class="media-list">
+                            <div class="media-icon">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div class="content">
+                                <div class="list-title">FULL ADDRESS</div>
+                                <div class="list-details">P.O Kanchanbagh, Hyderabad TG 500058 IN</div>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="list-title">SUB CATEGORY</div>
-                        <div class="list-details">Non-govt company</div>
-                    </li>
-                    <li>
-                        <div class="list-title">TYPE</div>
-                        <div class="list-details">Non-govt company, Public, Listed</div>
-                    </li>
-                    <li>
-                        <div class="list-title">AUTHORIZED CAPITAL</div>
-                        <div class="list-details">₹ 1,250,000,000</div>
-                    </li>
-                    <li>
-                        <div class="list-title">PAID UP CAPITAL</div>
-                        <div class="list-details">₹ 763,358,710</div>
-                    </li>
-                    <li>
-                        <div class="list-title">STATUS</div>
-                        <div class="list-details">Active</div>
-                    </li>
-                    <li>
-                        <div class="list-title">NSE SECTOR</div>
-                        <div class="list-details">Residential Commercial Projects</div>
-                    </li>
-                    <li>
-                        <div class="list-title">CORPOSITORY SECTOR</div>
-                        <div class="list-details">CONSTRUCTION & CONTRACTING - CIVIL</div>
-                    </li>
-                    <li>
-                        <div class="list-title">PRODUCT/SERVICES</div>
-                        <div class="list-details">Sale of properties / rights (Net)</div>
-                    </li>
-                    <li>
-                        <div class="list-title">PAN</div>
-                        <div class="list-details">AAACA6101D</div>
-                    </li>
-                    <li>
-                        <div class="list-title">LEI</div>
-                        <div class="list-details"> - </div>
-                    </li>
-                    <li>
-                        <div class="list-title">REMARKS</div>
-                        <div class="list-details"> - </div>
-                    </li>
-                  </ul>
+                        <div class="media-list">
+                            <div class="media-icon">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div class="content">
+                                <div class="list-title">EMAIL ID</div>
+                                <div class="list-details"><a href="#">paul.antony@midhani-india.in</a></div>
+                            </div>
+                        </div>
+                        <div class="media-list">
+                            <div class="media-icon">
+                                <i class="bi bi-globe2"></i>
+                            </div>
+                            <div class="content">
+                                <div class="list-title">WEBSITE</div>
+                                <div class="list-details"><a href="#">https://midhani-india.in/</a></div>
+                            </div>
+                        </div>
+                        <div class="media-list">
+                            <div class="media-icon">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <div class="content">
+                                <div class="list-title">TELEPHONE NUMBER</div>
+                                <div class="list-details">4024184515</div>
+                            </div>
+                        </div>
+                    </ul>
                 </div>
-              </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 co-xs-12">
+            </div>
             <div class="card custom-card">
                 <div class="card-header">
-                    <h3>company profile</h3>
+                    <h3>Incorporation Documents</h3>
                 </div>
                 <div class="card-body">
-                  <ul class="card-list-item">
-                    <li>
-                        <div class="list-title">CATEGORY</div>
-                        <div class="list-details">Company limited by Shares</div>
-                    </li>
-                    <li>
-                        <div class="list-title">CIN</div>
-                        <div class="list-details">L14292TG1973GOI001660</div>
-                    </li>
-                    <li>
-                        <div class="list-title">NAME</div>
-                        <div class="list-details">Mishra Dhatu Nigam Limited</div>
-                    </li>
-                    <li>
-                        <div class="list-title">SUB CATEGORY</div>
-                        <div class="list-details">Non-govt company</div>
-                    </li>
-                    <li>
-                        <div class="list-title">TYPE</div>
-                        <div class="list-details">Non-govt company, Public, Listed</div>
-                    </li>
-                    <li>
-                        <div class="list-title">AUTHORIZED CAPITAL</div>
-                        <div class="list-details">₹ 1,250,000,000</div>
-                    </li>
-                    <li>
-                        <div class="list-title">PAID UP CAPITAL</div>
-                        <div class="list-details">₹ 763,358,710</div>
-                    </li>
-                    <li>
-                        <div class="list-title">STATUS</div>
-                        <div class="list-details">Active</div>
-                    </li>
-                    <li>
-                        <div class="list-title">NSE SECTOR</div>
-                        <div class="list-details">Residential Commercial Projects</div>
-                    </li>
-                    <li>
-                        <div class="list-title">CORPOSITORY SECTOR</div>
-                        <div class="list-details">CONSTRUCTION & CONTRACTING - CIVIL</div>
-                    </li>
-                    <li>
-                        <div class="list-title">PRODUCT/SERVICES</div>
-                        <div class="list-details">Sale of properties / rights (Net)</div>
-                    </li>
-                    <li>
-                        <div class="list-title">PAN</div>
-                        <div class="list-details">AAACA6101D</div>
-                    </li>
-                    <li>
-                        <div class="list-title">LEI</div>
-                        <div class="list-details"> - </div>
-                    </li>
-                    <li>
-                        <div class="list-title">REMARKS</div>
-                        <div class="list-details"> - </div>
-                    </li>
-                  </ul>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#IncorporationDoc"><i class="bi bi-download"></i> Download</a>
                 </div>
-              </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 co-xs-12">
+            </div>
             <div class="card custom-card">
                 <div class="card-header">
-                    <h3>company profile</h3>
+                    <h3>Research Reports</h3>
                 </div>
                 <div class="card-body">
-                  <ul class="card-list-item">
-                    <li>
-                        <div class="list-title">CATEGORY</div>
-                        <div class="list-details">Company limited by Shares</div>
-                    </li>
-                    <li>
-                        <div class="list-title">CIN</div>
-                        <div class="list-details">L14292TG1973GOI001660</div>
-                    </li>
-                    <li>
-                        <div class="list-title">NAME</div>
-                        <div class="list-details">Mishra Dhatu Nigam Limited</div>
-                    </li>
-                    <li>
-                        <div class="list-title">SUB CATEGORY</div>
-                        <div class="list-details">Non-govt company</div>
-                    </li>
-                    <li>
-                        <div class="list-title">TYPE</div>
-                        <div class="list-details">Non-govt company, Public, Listed</div>
-                    </li>
-                    <li>
-                        <div class="list-title">AUTHORIZED CAPITAL</div>
-                        <div class="list-details">₹ 1,250,000,000</div>
-                    </li>
-                    <li>
-                        <div class="list-title">PAID UP CAPITAL</div>
-                        <div class="list-details">₹ 763,358,710</div>
-                    </li>
-                    <li>
-                        <div class="list-title">STATUS</div>
-                        <div class="list-details">Active</div>
-                    </li>
-                    <li>
-                        <div class="list-title">NSE SECTOR</div>
-                        <div class="list-details">Residential Commercial Projects</div>
-                    </li>
-                    <li>
-                        <div class="list-title">CORPOSITORY SECTOR</div>
-                        <div class="list-details">CONSTRUCTION & CONTRACTING - CIVIL</div>
-                    </li>
-                    <li>
-                        <div class="list-title">PRODUCT/SERVICES</div>
-                        <div class="list-details">Sale of properties / rights (Net)</div>
-                    </li>
-                    <li>
-                        <div class="list-title">PAN</div>
-                        <div class="list-details">AAACA6101D</div>
-                    </li>
-                    <li>
-                        <div class="list-title">LEI</div>
-                        <div class="list-details"> - </div>
-                    </li>
-                    <li>
-                        <div class="list-title">REMARKS</div>
-                        <div class="list-details"> - </div>
-                    </li>
-                  </ul>
+                    <a href="">View Details</a>
                 </div>
-              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- profile Modal -->
+<div class="modal custom-modal fade" id="profile">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Profile</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Profile includes information about the Formation, Type of Business, Ownership, Important Dates and
+                    Contact Details.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Disclaimer Modal -->
+<div class="modal custom-modal fade" id="disclaimer">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Disclaimer</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Entities with Common Directorships don't include common directorship companies of nominee and
+                    independent directors.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- old name modal  -->
+<div class="modal custom-modal fade" id="oldname">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Old Company/LLP Names</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table custom-table">
+                    <thead>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Old Company/LLP Name</th>
+                            <th>New Company/LLP Name</th>
+                            <th>CIN/LLPIN</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Company/LLP Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center">1</td>
+                            <td><a href="#">Akruti Nirman Limited</a></td>
+                            <td><a href="#">Akruti City Limited</a></td>
+                            <td>L45200MH1989PLC050688</td>
+                            <td>10/02/2007</td>
+                            <td>10/10/2007</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">2</td>
+                            <td><a href="#">Akruti City Limited</a></td>
+                            <td><a href="#">Ackruti City Limited</a></td>
+                            <td>L45200MH1989PLC050688</td>
+                            <td>10/02/2007</td>
+                            <td>31/05/2009</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">3</td>
+                            <td><a href="#">Ackruti City Limited</a></td>
+                            <td><a href="#">Hubtown Limited</a></td>
+                            <td>L45200MH1989PLC050688</td>
+                            <td>31/05/2009</td>
+                            <td>30/10/2011</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">4</td>
+                            <td><a href="#">Hubtown Limited</a></td>
+                            <td><a href="#">Hubtown Limited</a></td>
+                            <td>L45200MH1989PLC050688</td>
+                            <td>10/02/2007</td>
+                            <td>-</td>
+                            <td>Active</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- upload pdf modal -->
+<div class="modal custom-modal fade" id="uploadPdf">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Create Request</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">PAN</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1">
+                    </div>
+                    <div class="mb-3">
+                      <div class="dragarea">
+                        <div class="upload-icon">
+                            <i class="bi bi-cloud-upload"></i>                        
+                        </div>
+                        <span class="drag-title">Drag and Drop to Upload File<strong class="text-danger">*</strong> or  <a href="#" class="browse-btn">browse</a> <input type="file" class="my-file"></span>
+                        <div>
+                            <small>Please upload only 1 PDF file (not password protected)</small>
+                            <small><strong class="text-danger">*</strong> All fields are mandatory</small>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </form>
+            </div>
+            <div class="modal-footer text-end">
+                <button class="btn btn-teal btn-teal-fill" disabled="disabled">Submit Request</button>
+                <button class="btn btn-cancel" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- gstAddress modal -->
+<div class="modal custom-modal fade" id="gstAddress">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">GST Addresses</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table custom-table">
+                    <thead>
+                        <tr>
+                            <th>GSTIN</th>
+                            <th>Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>27AAACA6101D1ZE - Maharashtra</td>
+                            <td>CTS No. 469- A, HUBTOWN SEASONS, OPP. JAIN TEMPLE, R.K. CHEMBURKAR MARG, CHEMBUR EAST, Mumbai Suburban, Maharashtra, 400071</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- IncorporationDoc modal -->
+<div class="modal custom-modal fade" id="IncorporationDoc">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Download AOA/MOA/COI</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="tab-name">
+                            <span>Profile</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3 d-flex align-items-center">
+                        <p>Total Documents : <strong>0/27</strong> Total Size : <strong>0 Bytes/10 MB</strong></p>
+                    </div>
+                    <div class="offset-4 col-md-4 mb-3">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search" class="form-control">
+                                <i class="bi bi-search"></i>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <table class="table custom-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" name="checkbox" id="select_all"></th>
+                            <th>Sr. No.</th>
+                            <th>MCA Filling Date</th>
+                            <th>Document Category</th>
+                            <th>Document</th>
+                            <th>Actual File Name</th>
+                            <th>Attachment</th>
+                            <th style="width: 70px;">Size</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="checkbox" class="check"></td>
+                            <td>1</td>
+                            <td>27/07/2022</td>
+                            <td>Other Documents Attachment</td>
+                            <td>AOA</td>
+                            <td><a href="#">Altered articles of association-27072022</a></td>
+                            <td><span class="badge bg-danger">0</span></td>
+                            <td>3.4 MB</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="checkbox" class="check"></td>
+                            <td>2</td>
+                            <td>07/11/2014</td>
+                            <td>Other Documents Attachment</td>
+                            <td>MOA</td>
+                            <td><a href="#">MoA - Memorandum of Association-071114.PDF</a></td>
+                            <td><span class="badge bg-danger">0</span></td>
+                            <td>196 KB</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="checkbox" class="check"></td>
+                            <td>3</td>
+                            <td>27/07/2022</td>
+                            <td>Other Documents Attachment</td>
+                            <td>AOA</td>
+                            <td><a href="#">AoA - Articles of Association-071114.PDF</a></td>
+                            <td><span class="badge bg-danger">0</span></td>
+                            <td>363 KB</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="checkbox" class="check"></td>
+                            <td>4</td>
+                            <td>04/01/2014</td>
+                            <td>Other Documents Attachment</td>
+                            <td>AOA</td>
+                            <td><a href="#">AoA - Articles of Association-040114.PDF</a></td>
+                            <td><span class="badge bg-danger">0</span></td>
+                            <td>321 KB</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="checkbox" class="check"></td>
+                            <td>5</td>
+                            <td>27/07/2022</td>
+                            <td>Other Documents Attachment</td>
+                            <td>AOA</td>
+                            <td><a href="#">AoA - Articles of Association-201112.PDF</a></td>
+                            <td><span class="badge bg-danger">0</span></td>
+                            <td>285 KB</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="checkbox" class="check"></td>
+                            <td>6</td>
+                            <td>27/07/2022</td>
+                            <td>Certificates</td>
+                            <td>COI</td>
+                            <td><a href="#">Fresh Certificate of Incorporation Consequent upon Change of Name-241011.PDF</a></td>
+                            <td><span class="badge bg-danger">0</span></td>
+                            <td>157 KB</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="checkbox" class="check"></td>
+                            <td>7</td>
+                            <td>27/07/2022</td>
+                            <td>Incorporation Documents</td>
+                            <td>AOA</td>
+                            <td><a href="#">Fresh Certificate of Incorporation Consequent upon Change of Name-241011.PDF</a></td>
+                            <td><span class="badge bg-danger">0</span></td>
+                            <td>3.4 MB</td>
+                        </tr><tr>
+                            <td><input type="checkbox" name="checkbox" class="check"></td>
+                            <td>8</td>
+                            <td>27/07/2022</td>
+                            <td>Other Documents Attachment</td>
+                            <td>AOA</td>
+                            <td><a href="#">MoA - Memorandum of Association-241011.PDF</a></td>
+                            <td><span class="badge bg-danger">0</span></td>
+                            <td>156 KB</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="custom-pagination">
+                    <span class="result">27 Results</span>
+                    <span class="result-dropdown">
+                        Show 
+                        <select>
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+
+                        </select>
+                        Per Page
+                    </span>
+                    <span class="result">Showing <span>1 - 10</span> of 27</span>
+                    
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link Previous" href="#"><i class="bi bi-chevron-left"></i> Previous</a></li>
+                          <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item"><a class="page-link" href="#">5</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next <i class="bi bi-chevron-right"></i></a></li>
+                        </ul>
+                    </nav>
+                    <span class="result-dropdown">
+                        jump to page 
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+
+                        </select>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 </div>

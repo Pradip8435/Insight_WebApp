@@ -4,7 +4,7 @@
 <nav class="sidebar close">
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
         <li class="nab-list">
-            <a class="nav-link" id="nav-home-tab" data-bs-toggle="tab"  role="tab"  >
+            <a routerLink="../flagsComponent" class="nav-link" id="nav-home-tab" data-bs-toggle="tab"  role="tab"  >
                 <div class="icon">
                     <i class="bi bi-flag"></i>
                 </div>
@@ -100,9 +100,9 @@
             </a>
         </li>
         <li class="nab-list">
-            <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
+            <a routerLink="../newsComponent" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
                 <div class="icon">
-                    <i class="bi bi-people"></i>
+                    <i class="bi bi-newspaper"></i>
                 </div>
                 <span class="text">News</span>
             </a>
@@ -117,91 +117,7 @@
         </li>
     </div>
 </nav>
-<!-- <div class="offcanvas offcanvas-start custom-canvas" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-    <ul class="sidebar-nav">
-        <li>
-            <a href="#">
-                <div class="icon"><i class="bi bi-flag"></i></div>
-                <div>Flags</div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon"><i class="bi bi-building"></i></div>
-                <div>Profile</div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon"><i class="bi bi-people"></i></div>
-                <div>directors</div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon"><i class="bi bi-coin"></i></div>
-                <div>charges</div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon"><i class="bi bi-stars"></i></div>
-                <div>Rating</div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon"><i class="bi bi-layers"></i></div>
-                <div>Financials</div>
-            </a>
-        </li><li>
-            <a href="#">
-                <div class="icon"><i class="bi bi-calculator"></i></div>
-                <div>Auditors</div>
-            </a>
-        </li><li>
-            <a href="#">
-                <div class="icon"><i class="bi bi-building"></i></div>
-                <div>peers</div>
-            </a>
-        </li><li>
-            <a href="#">
-                <div class="icon"><i class="bi bi-building"></i></div>
-                <div>shareholding</div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon"><i class="bi bi-building"></i></div>
-                <div>Auditors</div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon"><i class="bi bi-building"></i></div>
-                <div>shareholding</div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon"><i class="bi bi-building"></i></div>
-                <div>Assosiates</div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon"><i class="bi bi-building"></i></div>
-                <div>compliance</div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon"><i class="bi bi-building"></i></div>
-                <div>consent</div>
-            </a>
-        </li>
-    </ul>
-</div> -->
+
 <!-- ======= sidebar end here========== -->
 <div class="wrapper">
     <div class="update-msg" id="update-msg" *ngIf="display">
@@ -215,12 +131,24 @@
     <app-master></app-master>
     <router-outlet></router-outlet>
 </div>
-<footer class="footer bg-dark text-white mt-auto">
+<footer class="footer bg-dark text-white">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6">1234</div>
-            <div class="col-lg-4 col-md-4 col-sm-6">qwerty</div>
-            <div class="col-lg-4 col-md-4 col-sm-12">dfghj</div>
+            <div class="col-lg-4 col-md-4 col-sm-4"><span class="">© 2023 All Rights Reserved</span></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 ">
+                <ul class="nav justify-content-center">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <ul class="nav social-media justify-content-end">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                  </ul>
+            </div>
         </div>
     </div>
 </footer>

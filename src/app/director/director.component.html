@@ -3,20 +3,20 @@
         <div class="col-12 title-section d-flex justify-content-between ">
             <div class="title-left-sec">
                 <i class="bi bi-building"></i>
-                <span class="tabs-name">shareholding</span>
-                <a href="#"><i class="bi bi-info-circle"></i></a>
-                <a href="#" class="text-danger"><i class="bi bi-exclamation-triangle"></i></a>
+                <span class="tabs-name">director</span>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#profile" ><i class="bi bi-info-circle"></i></a>
                 <span class="AsOndate">As On : <span>03/03/2021</span></span>
             </div>
             <div>
                 <button class="btn btn-teal btn-teal-outline"><i class="bi bi-arrow-clockwise"></i> Update Info</button>
+                <button class="btn btn-teal btn-teal-outline"><i class="bi bi-file-earmark-text"></i> Export to Excel</button>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-12">
-            <div class="card">
-                <table id="example" class="display custom-table director-table" style="width:100%">
+            <div class="card custom-card">
+                <table id="example" class=" custom-table director-table" style="width:100%">
                     <thead>
                         <tr>
                             <th>name</th>
@@ -39,11 +39,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="odd">
+                        <tr>
                             <td class="">
                                 <div>
-                                    <a href="Director_details.html">VYOMESH MAHIPATRAY SHAH</a>
-                                    <small>(DOB: 15/11/1959)</small>
+                                    <a routerLink="../directorDetails">VYOMESH MAHIPATRAY SHAH</a>
+                                    <small class="dob">(DOB: 15/11/1959)</small>
                                 </div>
                             </td>
                             <td class="text-right"> 00009596
@@ -65,17 +65,20 @@
                             </td>
                             <td>-</td>
                             <td>
+                                <strong class="text-danger">View
+                                    Disqualification
+                                    Remarks</strong><br>
                                 <strong class="small">DIN Status</strong>
                                 <small>Approved</small>
                                 <strong class="small">DSC Status</strong>
                                 <small>Active</small>
                             </td>
                         </tr>
-                        <tr class="even">
+                        <tr>
                             <td class="">
                                 <div>
                                     <a href="Director_details.html">ABHIJIT DATT</a>
-                                    <small>(DOB: 01/06/1949)</small>
+                                    <small class="dob">(DOB: 01/06/1949)</small>
                                 </div>
                             </td>
                             <td class="text-right">
@@ -98,11 +101,11 @@
                             <td>dattaabhijit@ ymail.com</td>
                             <td>-</td>
                         </tr>
-                        <tr class="odd">
+                        <tr>
                             <td class="">
                                 <div>
                                     <a href="Director_details.html">HEMANT MAHIPATRAY SHAH</a>
-                                    <small>(DOB: 20/05/1953)</small>
+                                    <small class="dob">(DOB: 20/05/1953)</small>
                                 </div>
                             </td>
                             <td class="text-right">
@@ -129,11 +132,11 @@
                                 <small>Active</small>
                             </td>
                         </tr>
-                        <tr class="even">
+                        <tr>
                             <td class="">
                                 <div>
                                     <a href="Director_details.html">KETAKI RAJAT SHAH</a>
-                                    <small>(DOB: 18/08/1960)</small>
+                                    <small class="dob">(DOB: 18/08/1960)</small>
                                 </div>
                             </td>
                             <td class="text-right">
@@ -161,11 +164,11 @@
                                 <small>Active</small>
                             </td>
                         </tr>
-                        <tr class="odd">
+                        <tr>
                             <td class="">
                                 <div>
                                     <a href="Director_details.html">KARTIK RUPAREL</a>
-                                    <small>(DOB: 03/10/1988)</small>
+                                    <small class="dob">(DOB: 03/10/1988)</small>
                                 </div>
                             </td>
                             <td class="text-right">
@@ -193,11 +196,11 @@
                                 <small>Active</small>
                             </td>
                         </tr>
-                        <tr class="even">
+                        <tr>
                             <td class="">
                                 <div>
                                     <a href="Director_details.html">SUNIL CHANDRAKANT SHAH</a>
-                                    <small>(DOB: 29/09/1959)</small>
+                                    <small class="dob">(DOB: 29/09/1959)</small>
                                 </div>
                             </td>
                             <td class="text-right">
@@ -225,11 +228,11 @@
                                 <small>Expired on 29/07/2022</small>
                             </td>
                         </tr>
-                        <tr class="odd">
+                        <tr>
                             <td class="">
                                 <div>
                                     <a href="Director_details.html">PRITI KAMLESH SHAH</a>
-                                    <small>(DOB: 23/11/1970 </small>
+                                    <small class="dob">(DOB: 23/11/1970 </small>
                                 </div>
                             </td>
                             <td class="text-right">
@@ -252,11 +255,11 @@
                             <td>priti@ live.in</td>
                             <td>-</td>
                         </tr>
-                        <tr class="even">
+                        <tr>
                             <td class="">
                                 <div>
                                     <a href="Director_details.html">MITKUMAR KORADIA</a>
-                                    <small>(DOB: 14/11/1987)</small>
+                                    <small class="dob">(DOB: 14/11/1987)</small>
                                 </div>
                             </td>
                             <td class="text-right">
@@ -279,11 +282,11 @@
                             <td>koradiamit@ gmail.com</td>
                             <td>-</td>
                         </tr>
-                        <tr class="odd">
+                        <tr>
                             <td class="">
                                 <div>
                                     <a href="Director_details.html">SUNIL MAGO</a>
-                                    <small>(DOB: -)</small>
+                                    <small class="dob">(DOB: -)</small>
                                 </div>
                             </td>
                             <td class="text-right">
@@ -309,11 +312,11 @@
                                 <small>Active</small>
                             </td>
                         </tr>
-                        <tr class="even">
+                        <tr>
                             <td class="">
                                 <div>
                                     <a href="Director_details.html">SADANAND SITARAM LAD</a>
-                                    <small>(DOB: -)</small>
+                                    <small class="dob">(DOB: -)</small>
                                 </div>
                             </td>
                             <td class="text-right">
@@ -341,6 +344,21 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- profile Modal -->
+<div class="modal custom-modal fade" id="profile">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Directors</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Information about the members on the Board of Directors and Key Management Personnel who are reported by the company as Signatories to MCA documents and their Directorships in other companies.</p>
             </div>
         </div>
     </div>

@@ -1,1 +1,150 @@
-<p>rating works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12 title-section d-flex justify-content-between ">
+            <div class="title-left-sec">
+                <i class="bi bi-stars"></i>
+                <span class="tabs-name">rating</span>
+                <a href="#" data-bs-target="#profile" data-bs-toggle="modal"><i class="bi bi-info-circle"></i></a>
+                <a href="#" class="text-danger" data-bs-target="#disclaimer" data-bs-toggle="modal"><i class="bi bi-exclamation-triangle"></i></a>
+                <span class="AsOndate">As On : <span>03/03/2021</span></span>
+            </div>
+            <div>
+                <button class="btn btn-teal btn-teal-outline"><i class="bi bi-file-earmark-excel"></i> Export to Excel</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card custom-card">
+               <div class="table-responsive">
+                <table class="table custom-table m-0" id="ratingTable" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Rating Date</th>
+                            <th>Agency</th>
+                            <th>Rating</th>
+                            <th>Rating Outlook</th>
+                            <th>Instrument</th>
+                            <th>Duration</th>
+                            <th>Amount</th>
+                            <th>Rating Action</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>14/01/2021</td>
+                            <td><a href="#">Brickwork</a></td>
+                            <td>Withdrawn</td>
+                            <td>-</td>
+                            <td>Non Convertible Debentures</td>
+                            <td>Long Term</td>
+                            <td class="text-end">1,000,000,000</td>
+                            <td>Withdrawn</td>
+                        </tr>
+                        <tr>
+                            <td>13/01/2021</td>
+                            <td><a href="">Brickwork</a></td>
+                            <td>D [INC]<span class="text-danger">**</span></td>
+                            <td>-</td>
+                            <td>Non Convertible Debentures</td>
+                            <td>Long Term</td>
+                            <td class="text-end">1,000,000,000</td>
+                            <td>Retained</td>
+                        </tr>
+                        <tr>
+                            <td>17/01/2020</td>
+                            <td><a href="">Brickwork</a></td>
+                            <td>D [INC]<span class="text-danger">**</span></td>
+                            <td>-</td>
+                            <td>Non Convertible Debentures</td>
+                            <td>Long Term</td>
+                            <td class="text-end">1,000,000,000</td>
+                            <td>Retained</td>
+                        </tr>
+                        <tr>
+                            <td>14/01/2019</td>
+                            <td><a href="">Brickwork</a></td>
+                            <td>D [INC]<span class="text-danger">**</span></td>
+                            <td>-</td>
+                            <td>Non Convertible Debentures</td>
+                            <td>Long Term</td>
+                            <td class="text-end">1,000,000,000</td>
+                            <td>Retained</td>
+                        </tr>
+                        <tr>
+                            <td>15/01/2018</td>
+                            <td><a href="">Brickwork</a></td>
+                            <td>D</td>
+                            <td>-</td>
+                            <td>Non Convertible Debentures</td>
+                            <td>Long Term</td>
+                            <td class="text-end">1,000,000,000</td>
+                            <td>Retained</td>
+                        </tr>
+                        <tr>
+                            <td>30/12/2015</td>
+                            <td><a href="">Brickwork</a></td>
+                            <td>D</td>
+                            <td>-</td>
+                            <td>Non Convertible Debentures</td>
+                            <td>Long Term</td>
+                            <td class="text-end">1,000,000,000</td>
+                            <td>Downgraded</td>
+                        </tr><tr>
+                            <td>14/03/2014</td>
+                            <td><a href="">Brickwork</a></td>
+                            <td>B</td>
+                            <td>-</td>
+                            <td>Non Convertible Debentures</td>
+                            <td>Long Term</td>
+                            <td class="text-end">1,000,000,000</td>
+                            <td>Upgraded</td>
+                        </tr>
+                        <tr>
+                            <td>25/07/2012</td>
+                            <td><a href="#">Care</a></td>
+                            <td>Suspended</td>
+                            <td>-</td>
+                            <td>None</td>
+                            <td>Long Term</td>
+                            <td class="text-end">7,293,200,000</td>
+                            <td>Suspended</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+               </div>
+            </div>
+            <div class="note"><strong class="text-danger">**</strong> Issuer did not co-operate; Based on best available information.INC - Non-provision of adequate information or clarification or non-payment of fees by the issuer to the rating agency.</div>
+        </div>
+    </div>
+</div>
+<!-- profile Modal -->
+<div class="modal custom-modal fade" id="profile">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Rating</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Independent Credit Rating Agencies provide rating on the creditworthiness of the company based on the type and the amount of its assets, liabilities and company's capacity to service the debt. Some ratings also rate the equity instruments. This section provides the history of Ratings for last 5 years or more. It also helps user know not only the current rating of the company but also how the rating has moved over last few years (Upgraded/Downgraded/ Suspended/Withdrawn/Retained).</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Disclaimer Modal -->
+<div class="modal custom-modal fade" id="disclaimer">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Disclaimer</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>All Ratings are covered from 1st April, 2011 and it includes 6 rating sites like ICRA, CRISIL, BRICK WORK, INDIA RATINGS, ACUITE, CARE.</p>
+            </div>
+        </div>
+    </div>
+</div>

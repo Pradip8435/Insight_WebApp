@@ -1,1 +1,102 @@
-<p>charges works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12 title-section d-flex justify-content-between ">
+            <div class="title-left-sec">
+                <i class="bi bi-coin"></i>
+                <span class="tabs-name">charges</span>
+                <a href="#" data-bs-target="#profile" data-bs-toggle="modal"><i class="bi bi-info-circle"></i></a>
+                <a href="#" class="text-danger" data-bs-target="#disclaimer" data-bs-toggle="modal"><i class="bi bi-exclamation-triangle"></i></a>
+                <span class="AsOndate">As On : <span>03/03/2021</span></span>
+            </div>
+            <div>
+                <button class="btn btn-teal btn-teal-outline"><i class="bi bi-arrow-clockwise"></i> Update Info</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+               <div class="table-responsive">
+                <table class="table custom-table" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Charge ID</th>
+                            <th>Date of Creation</th>
+                            <th>Date of Modification</th>
+                            <th>Date of Satisfaction</th>
+                            <th>Charge amount</th>
+                            <th>Charge holder</th>
+                            <th>Asset under charge</th>
+                            <th>Charge holder address</th>
+                        </tr>
+                        <tr>
+                            <th><input type="text" name="" id=""></th>
+                            <th><input type="text" name="" id=""></th>
+                            <th><input type="text" name="" id=""></th>
+                            <th><input type="text" name="" id=""></th>
+                            <th><input type="text" name="" id=""></th>
+                            <th><input type="text" name="" id=""></th>
+                            <th><input type="text" name="" id=""></th>
+                            <th><input type="text" name="" id=""></th>
+                        </tr>
+                        
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>100668178</td>
+                            <td>14/01/2023</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="text-end">3,703,898,323</td>
+                            <td>IDBI TRUSTEESHIP SERVICES LIMITED</td>
+                            <td>-</td>
+                            <td>Asian Bldg. Ground Floor 17 R.Kamani MargBallard EstateMumbai Mumbai MH400001IN</td>
+                        </tr>
+                        <!-- <tr>
+                            <td class="">100668178</td>
+                            <td>14/01/2023</td>
+                            <td class="">-</td>
+                            <td>-</td>
+                            <td class="text-end">3,703,898,323</td>
+                            <td>IDBI TRUSTEESHIP SERVICES LIMITED</td>
+                            <td>-</td>
+                            <td>Asian Bldg. Ground Floor 17 R.Kamani MargBallard EstateMumbaiMumbaiMH400001IN</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- profile Modal -->
+<div class="modal custom-modal fade" id="profile">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Profile</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Profile includes information about the Formation, Type of Business, Ownership, Important Dates and
+                    Contact Details.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Disclaimer Modal -->
+<div class="modal custom-modal fade" id="disclaimer">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Disclaimer</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Entities with Common Directorships don't include common directorship companies of nominee and
+                    independent directors.</p>
+            </div>
+        </div>
+    </div>
+</div>

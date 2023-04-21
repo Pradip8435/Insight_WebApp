@@ -13,40 +13,44 @@ import { FinancialsComponent } from './financials/financials.component';
 import { AuditorsComponent } from './auditors/auditors.component';
 import { PeersComponent } from './peers/peers.component';
 import { ShareholdingComponent } from './shareholding/shareholding.component';
+import { DirectorDetailsComponent } from './director-details/director-details.component';
+import { FlagsComponent } from './flags/flags.component';
+import { NewsComponent } from './news/news.component';
 
 
 const appRoutes:Routes =[
   {
-    path:'', 
-    component:CompanyProfileComponent
+    path:'', component:CompanyProfileComponent
   },
   {
-    path:'directorComponent', 
-    component:DirectorComponent
+    path:'directorComponent', component:DirectorComponent
   },
   {
-    path:'chargesComponent', 
-    component:ChargesComponent
+    path:'chargesComponent', component:ChargesComponent
   },
   {
-    path:'ratingComponent', 
-    component:RatingComponent
+    path:'ratingComponent', component:RatingComponent
   },
   {
-    path:'financialsComponent', 
-    component:FinancialsComponent
+    path:'financialsComponent', component:FinancialsComponent
   },
   {
-    path:'autitorsComponent', 
-    component:AuditorsComponent
+    path:'autitorsComponent', component:AuditorsComponent
   },
   {
-    path:'peersComponent', 
-    component:PeersComponent
+    path:'peersComponent', component:PeersComponent
   },
   {
-    path:'shareholdingComponent', 
-    component:ShareholdingComponent
+    path:'shareholdingComponent', component:ShareholdingComponent
+  },
+  {
+    path: 'directorDetails',component: DirectorDetailsComponent
+  },
+  {
+    path:'flagsComponent',component: FlagsComponent
+  },
+  {
+    path: 'newsComponent',component: NewsComponent
   }
 
 ]
@@ -62,7 +66,10 @@ const appRoutes:Routes =[
     FinancialsComponent,
     AuditorsComponent,
     PeersComponent,
-    ShareholdingComponent  
+    ShareholdingComponent,
+    DirectorDetailsComponent,
+    FlagsComponent,
+    NewsComponent  
   ],
   imports: [
     BrowserModule,
