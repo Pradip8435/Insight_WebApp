@@ -3,9 +3,9 @@
         <div class="col-12 title-section d-flex justify-content-between ">
             <div class="title-left-sec">
                 <i class="bi bi-building"></i>
-                <span class="tabs-name">Profile</span>
+                <h2 class="tabs-name">Profile</h2>
                 <a href="#" data-bs-toggle="modal" data-bs-target="#profile"><i class="bi bi-info-circle"></i></a>
-                <a href="#" class="text-danger" data-bs-toggle="modal" data-bs-target="#disclaimer"><i
+                <a href="#" class="text-red" data-bs-toggle="modal" data-bs-target="#disclaimer"><i
                         class="bi bi-exclamation-triangle"></i></a>
                 <span class="AsOndate">As On : <span>03/03/2021</span></span>
             </div>
@@ -107,7 +107,7 @@
                         <div class="timeline-dots"></div>
                         <div class="timeline-content">
                             <div class="list-title">DATE OF LAST BALANCE SHEET</div>
-                            <div class="list-details">31/03/2022 <a href="#" data-bs-toggle="tooltip"
+                            <div class="list-details d-block">31/03/2022 <a href="#" data-bs-toggle="tooltip"
                                     title="Balance sheet date as per data available from MCA"><i
                                         class="bi bi-info-circle"></i></a></div>
                         </div>
@@ -247,7 +247,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="exampleModalLabel">Profile</h4>
+                <h2 class="modal-title" id="exampleModalLabel">Profile</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -343,7 +343,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="exampleModalLabel">Create Request</h4>
+                <h2 class="modal-title" id="exampleModalLabel">Create Request</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -379,7 +379,7 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="exampleModalLabel">GST Addresses</h4>
+                <h2 class="modal-title" id="exampleModalLabel">GST Addresses</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -406,7 +406,7 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="exampleModalLabel">Download AOA/MOA/COI</h4>
+                <h2 class="modal-title" id="exampleModalLabel">Download AOA/MOA/COI</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -433,7 +433,11 @@
                 <table class="table custom-table">
                     <thead>
                         <tr>
-                            <th><input type="checkbox" name="checkbox" id="select_all"></th>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="select_all">
+                                  </div>
+                                <!-- <input type="checkbox" name="checkbox" id="select_all"></th> -->
                             <th>Sr. No.</th>
                             <th>MCA Filling Date</th>
                             <th>Document Category</th>
@@ -445,7 +449,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><input type="checkbox" name="checkbox" class="check"></td>
+                            <td><input type="checkbox" name="checkbox" class="form-check-input check"></td>
                             <td>1</td>
                             <td>27/07/2022</td>
                             <td>Other Documents Attachment</td>
@@ -455,7 +459,7 @@
                             <td>3.4 MB</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name="checkbox" class="check"></td>
+                            <td><input type="checkbox" name="checkbox" class="check form-check-input"></td>
                             <td>2</td>
                             <td>07/11/2014</td>
                             <td>Other Documents Attachment</td>
@@ -465,7 +469,7 @@
                             <td>196 KB</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name="checkbox" class="check"></td>
+                            <td><input type="checkbox" name="checkbox" class="check form-check-input"></td>
                             <td>3</td>
                             <td>27/07/2022</td>
                             <td>Other Documents Attachment</td>
@@ -475,7 +479,7 @@
                             <td>363 KB</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name="checkbox" class="check"></td>
+                            <td><input type="checkbox" name="checkbox" class="check form-check-input"></td>
                             <td>4</td>
                             <td>04/01/2014</td>
                             <td>Other Documents Attachment</td>
@@ -485,7 +489,7 @@
                             <td>321 KB</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name="checkbox" class="check"></td>
+                            <td><input type="checkbox" name="checkbox" class="check form-check-input"></td>
                             <td>5</td>
                             <td>27/07/2022</td>
                             <td>Other Documents Attachment</td>
@@ -495,7 +499,7 @@
                             <td>285 KB</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name="checkbox" class="check"></td>
+                            <td><input type="checkbox" name="checkbox" class="check form-check-input"></td>
                             <td>6</td>
                             <td>27/07/2022</td>
                             <td>Certificates</td>
@@ -505,7 +509,7 @@
                             <td>157 KB</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name="checkbox" class="check"></td>
+                            <td><input type="checkbox" name="checkbox" class="check form-check-input"></td>
                             <td>7</td>
                             <td>27/07/2022</td>
                             <td>Incorporation Documents</td>
@@ -514,7 +518,7 @@
                             <td><span class="badge bg-danger">0</span></td>
                             <td>3.4 MB</td>
                         </tr><tr>
-                            <td><input type="checkbox" name="checkbox" class="check"></td>
+                            <td><input type="checkbox" name="checkbox" class="check form-check-input"></td>
                             <td>8</td>
                             <td>27/07/2022</td>
                             <td>Other Documents Attachment</td>

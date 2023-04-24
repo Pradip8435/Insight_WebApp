@@ -4,7 +4,7 @@
 <nav class="sidebar close">
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
         <li class="nab-list">
-            <a routerLink="../flagsComponent" class="nav-link" id="nav-home-tab" data-bs-toggle="tab"  role="tab"  >
+            <a routerLink="../flags" class="nav-link" id="nav-home-tab" data-bs-toggle="tab"  role="tab"  >
                 <div class="icon">
                     <i class="bi bi-flag"></i>
                 </div>
@@ -20,7 +20,7 @@
             </a>
         </li>
         <li class="nab-list">
-            <a routerLink="../directorComponent" class="nav-link free-tab" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
+            <a routerLink="../director" class="nav-link free-tab" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
                 <div class="icon">
                     <i class="bi bi-people"></i>
                 </div>
@@ -28,7 +28,7 @@
             </a>
         </li>
         <li class="nab-list">
-            <a routerLink="../chargesComponent" class="nav-link free-tab" id="nav-contact-tab free-tab" data-bs-toggle="tab"  role="tab" >
+            <a routerLink="../charges" class="nav-link free-tab" id="nav-contact-tab free-tab" data-bs-toggle="tab"  role="tab" >
                 <div class="icon">
                     <i class="bi bi-coin"></i>                
                 </div>
@@ -36,7 +36,7 @@
             </a>
         </li>
         <li class="nab-list">
-            <a routerLink="../ratingComponent" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
+            <a routerLink="../rating" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
                 <div class="icon">
                     <i class="bi bi-stars"></i>
                 </div>
@@ -44,7 +44,7 @@
             </a>
         </li>
         <li class="nab-list">
-            <a routerLink="../financialsComponent" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
+            <a routerLink="../financials" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
                 <div class="icon">
                     <i class="bi bi-layers"></i>
                 </div>
@@ -52,7 +52,7 @@
             </a>
         </li>
         <li class="nab-list">
-            <a routerLink="../autitorsComponent" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
+            <a routerLink="../auditors" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
                 <div class="icon">
                     <i class="bi bi-calculator"></i>
                 </div>
@@ -60,7 +60,7 @@
             </a>
         </li>
         <li class="nab-list">
-            <a routerLink="../peersComponent" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
+            <a routerLink="../peers" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
                 <div class="icon">
                     <i class="bi bi-people"></i>
                 </div>
@@ -68,9 +68,9 @@
             </a>
         </li>
         <li class="nab-list">
-            <a routerLink="../shareholdingComponent" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
+            <a routerLink="../shareholding" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
                 <div class="icon">
-                    <i class="bi bi-people"></i>
+                    <i class="bi bi-clock"></i>
                 </div>
                 <span class="text">shareholding</span>
             </a>
@@ -100,7 +100,7 @@
             </a>
         </li>
         <li class="nab-list">
-            <a routerLink="../newsComponent" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
+            <a routerLink="../news" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
                 <div class="icon">
                     <i class="bi bi-newspaper"></i>
                 </div>
@@ -123,8 +123,6 @@
     <div class="update-msg" id="update-msg" *ngIf="display">
         <span>We are updating the information and will notify you soon.</span>
         <span>
-            <button class="btn btn_note">Imp. Note</button>
-
             <a id="update-msg-close" (click)="HideShow()"><i class="bi bi-x-lg"></i></a>
         </span>
     </div>

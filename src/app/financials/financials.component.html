@@ -1,8 +1,1195 @@
 <div class="container">
     <div class="row">
-        <div class="col-12">
-            <p>financials works!</p>
+        <div class="col-12 title-section d-flex justify-content-between ">
+            <div class="title-left-sec">
+                <i class="bi bi-layers"></i>
+                <h2 class="tabs-name">financials</h2>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#profile"><i class="bi bi-info-circle"></i></a>
+                <a href="#" class="text-red" data-bs-target="#disclaimer" data-bs-toggle="modal"><i
+                        class="bi bi-exclamation-triangle"></i></a>
+            </div>
+            <div>
+                <div class="toggle-switch-group">
+                    <span>Yearly</span>
+                    <span class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    </span>
+                    <span>Quarterly</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 first_content">
+            <!-- financial main tab start here -->
+            <div class="financial-tabs">
+                <nav>
+                    <div class="nav nav-tabs custom-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#Standalone" type="button"
+                            id="nav-Standalone-tab" role="tab" aria-controls="Standalone"
+                            aria-selected="true">Standalone</button>
+                        <button class="nav-link" id="nav-Consolidated-tab" data-bs-toggle="tab"
+                            data-bs-target="#Consolidated" type="button" role="tab" aria-controls="nav-Consolidated"
+                            aria-selected="false">Consolidated</button>
 
+                        <button class="nav-link" id="nav-businessConstituents-tab" data-bs-toggle="tab"
+                            data-bs-target="#businessConstituents" type="button" role="tab"
+                            aria-controls="nav-businessConstituents" aria-selected="false">Business
+                            Constituents &nbsp;<a href="#"><i class="bi bi-info-circle"></i></a></button>
+                    </div>
+                </nav>
+                <span>Amt in ₹</span>
+            </div>
+            <!-- financial main tab end here -->
+            <!-- financial main tab content start here -->
+            <div class="tab-content mt-3" id="nav-tabContent">
+                <!-- =========standalone content start here ==========-->
+                <div class="tab-pane fade show active" id="Standalone" role="tabpanel"
+                    aria-labelledby="nav-Standalone-tab">
+                    <!-- financial inner tabs start here -->
+                    <nav class="financial-second-tab">
+                        <div class="nav nav-tabs custom-tabs-group" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-Snapshot-tab" data-bs-toggle="tab"
+                                data-bs-target="#Snapshot" type="button" role="tab" aria-controls="nav-Snapshot"
+                                aria-selected="true">Snapshot</button>
+                            <button class="nav-link" id="nav-balancesheet-tab" data-bs-toggle="tab"
+                                data-bs-target="#balancesheet" type="button" role="tab" aria-controls="nav-balancesheet"
+                                aria-selected="false">Balance Sheet</button>
+                            <button class="nav-link" id="nav-profitLoss-tab" data-bs-toggle="tab"
+                                data-bs-target="#profitLoss" type="button" role="tab" aria-controls="nav-profitLoss"
+                                aria-selected="false">Profit & Loss</button>
+                            <button class="nav-link" id="nav-cashFlow-tab" data-bs-toggle="tab"
+                                data-bs-target="#cashFlow" type="button" role="tab" aria-controls="nav-cashFlow"
+                                aria-selected="false">Cash Flow</button>
+                            <button class="nav-link" id="nav-ratios-tab" data-bs-toggle="tab"
+                                data-bs-target="#ratios" type="button" role="tab" aria-controls="nav-ratios"
+                                aria-selected="false">Ratios</button>
+
+                        </div>
+                        <span class="AsOndate">
+                            As on 03/03/2021
+                        </span>
+                    </nav>
+                    <!-- financial inner tabs end here -->
+                    <!-- financial inner tabs content start here -->
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="Snapshot" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <!-- snapshot data -->
+                            <table class="table custom-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 30%;">Particulars</th>
+                                        <th class="text-end"><a href="#" class="pdf-red"><i
+                                                    class="bi bi-file-earmark-pdf-fill"></i></a> 2017-2018 <span
+                                                class="text-red">*</span></th>
+                                        <th class="text-end"><a href="#" class="pdf-red"><i
+                                                    class="bi bi-file-earmark-pdf-fill"></i></a> 2018-2019</th>
+                                        <th class="text-end"><a href="#" class="pdf-red"><i
+                                                    class="bi bi-file-earmark-pdf-fill"></i></a> 2019-2020</th>
+                                        <th class="text-end"><a href="#" data-bs-toggle="tooltip" title="Source: Stock Exchange"><i class="bi bi-info-circle"></i></a> 2020-2021
+                                        </th>
+                                        <th class="text-end"><a href="#"  data-bs-toggle="tooltip" title="Source: Stock Exchange"><i class="bi bi-info-circle"></i></a> 2021-2022
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Revenue from Operations</td>
+                                        <td class="text-end">3,418,657,000</td>
+                                        <td class="text-end">4,140,450,000</td>
+                                        <td class="text-end">2,554,838,000</td>
+                                        <td class="text-end">2,377,588,000</td>
+                                        <td class="text-end">1,828,033,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>EBITDA</td>
+                                        <td class="text-end">765,863,000</td>
+                                        <td class="text-end">440,834,000</td>
+                                        <td class="text-end">712,442,000</td>
+                                        <td class="text-end">-1,467,407,000</td>
+                                        <td class="text-end">-1,233,922,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PAT</td>
+                                        <td class="text-end">265,389,000</td>
+                                        <td class="text-end">-70,944,000</td>
+                                        <td class="text-end">-594,645,000</td>
+                                        <td class="text-end">-1,559,902,000</td>
+                                        <td class="text-end">-1,208,885,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Networth</td>
+                                        <td class="text-end">17,548,776,000</td>
+                                        <td class="text-end">17,343,044,000</td>
+                                        <td class="text-end">16,754,344,000</td>
+                                        <td class="text-end">15,182,373,000</td>
+                                        <td class="text-end">14,014,004,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Long - term Borrowings</td>
+                                        <td class="text-end">654,745,000</td>
+                                        <td class="text-end">550,461,000</td>
+                                        <td class="text-end">305,059,000</td>
+                                        <td class="text-end">285,032,000</td>
+                                        <td class="text-end">143,509,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="note"><strong>Note:</strong><strong class="text-red">*</strong> In the Interest
+                                of Time and to Avoid certain Filing Inconsistencies, Data has been updated through
+                                Manual Intervention</div>
+                        </div>
+                        <!-- balancesheet data -->
+                        <div class="tab-pane fade" id="balancesheet" role="tabpanel" aria-labelledby="nav-balancesheet-tab">
+                            <table class="table custom-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 30%;">Particulars</th>
+                                        <th class="text-end"><a href="#" class="pdf-red"><i
+                                                    class="bi bi-file-earmark-pdf-fill"></i></a> 2017-2018 <span
+                                                class="text-red">*</span></th>
+                                        <th class="text-end"><a href="#" class="pdf-red"><i
+                                                    class="bi bi-file-earmark-pdf-fill"></i></a> 2018-2019</th>
+                                        <th class="text-end"><a href="#" class="pdf-red"><i
+                                                    class="bi bi-file-earmark-pdf-fill"></i></a> 2019-2020</th>
+                                        <th class="text-end"><a href="#" data-bs-toggle="tooltip" title="Source: Stock Exchange"><i class="bi bi-info-circle"></i></a> 2020-2021
+                                        </th>
+                                        <th class="text-end"><a href="#"  data-bs-toggle="tooltip" title="Source: Stock Exchange"><i class="bi bi-info-circle"></i></a> 2021-2022
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlite">
+                                        <th>SHAREHOLDERS FUND</th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Share Capital</td>
+                                        <td class="text-end">727,359,000</td>
+                                        <td class="text-end">727,359,000</td>
+                                        <td class="text-end">727,359,000</td>
+                                        <td class="text-end">727,359,000</td>
+                                        <td class="text-end">727,359,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reserves & Surplus</td>
+                                        <td class="text-end">16,821,417,000</td>
+                                        <td class="text-end">16,615,685,000</td>
+                                        <td class="text-end">16,026,985,000</td>
+                                        <td class="text-end">14,455,014,000</td>
+                                        <td class="text-end">13,286,645,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Money Received against Warrants</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Networth</td>
+                                        <td class="text-end fw-bold">17,548,776,000</td>
+                                        <td class="text-end fw-bold">17,343,044,000</td>
+                                        <td class="text-end fw-bold">16,754,344,000</td>
+                                        <td class="text-end fw-bold">15,182,373,000</td>
+                                        <td class="text-end fw-bold">14,014,004,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Share Application Money Pending Allotment</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deferred Government Grants</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Minority Interest</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr class="highlite">
+                                        <th>NON CURRENT LIABILITIES</th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Long-term Borrowings</td>
+                                        <td class="text-end">654,745,000</td>
+                                        <td class="text-end">550,461,000</td>
+                                        <td class="text-end">305,059,000</td>
+                                        <td class="text-end">285,032,000</td>
+                                        <td class="text-end">143,509,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deferred Tax Liabilities</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other Non Current Liabilities</td>
+                                        <td class="text-end">757,158,000</td>
+                                        <td class="text-end">507,677,000</td>
+                                        <td class="text-end">303,564,000</td>
+                                        <td class="text-end">415,620,000</td>
+                                        <td class="text-end">325,129,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Long-term Provisions</td>
+                                        <td class="text-end">20,894,000</td>
+                                        <td class="text-end">21,800,000</td>
+                                        <td class="text-end">19,891,000</td>
+                                        <td class="text-end">20,294,000</td>
+                                        <td class="text-end">16,504,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Total Non Current Liabilities</td>
+                                        <td class="text-end fw-bold">1,432,797,000</td>
+                                        <td class="text-end fw-bold">1,079,938,000</td>
+                                        <td class="text-end fw-bold">628,514,000</td>
+                                        <td class="text-end fw-bold">720,946,000</td>
+                                        <td class="text-end fw-bold">485,142,000</td>
+                                    </tr>
+                                    <tr class="highlite">
+                                        <th>CURRENT LIABILITIES</th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Short-term Borrowings</td>
+                                        <td class="text-end">2,677,744,000</td>
+                                        <td class="text-end">2,532,710,000</td>
+                                        <td class="text-end">2,311,813,000</td>
+                                        <td class="text-end">4,567,266,000</td>
+                                        <td class="text-end">4,362,829,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trade Payables</td>
+                                        <td class="text-end">1,038,945,000</td>
+                                        <td class="text-end">1,194,632,000</td>
+                                        <td class="text-end">1,323,338,000</td>
+                                        <td class="text-end">1,261,500,000</td>
+                                        <td class="text-end">1,360,303,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other Current Liabilities</td>
+                                        <td class="text-end">1,038,945,000</td>
+                                        <td class="text-end">1,194,632,000</td>
+                                        <td class="text-end">1,323,338,000</td>
+                                        <td class="text-end">1,261,500,000</td>
+                                        <td class="text-end">1,360,303,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Short-term Provisions</td>
+                                        <td class="text-end">29,031,000</td>
+                                        <td class="text-end">34,498,000</td>
+                                        <td class="text-end">40,738,000</td>
+                                        <td class="text-end">60,708,000</td>
+                                        <td class="text-end">21,208,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Total Current Liabilities</td>
+                                        <td class="text-end fw-bold">22,765,802,000</td>
+                                        <td class="text-end fw-bold">23,749,223,000</td>
+                                        <td class="text-end fw-bold">22,362,704,000</td>
+                                        <td class="text-end fw-bold">21,787,189,000</td>
+                                        <td class="text-end fw-bold">22,532,797,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other Equity & Liabilities</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr class="total-amount">
+                                        <td>Total Equity & Liabilities</td>
+                                        <td class="text-end">41,747,375,000</td>
+                                        <td class="text-end">42,172,205,000</td>
+                                        <td class="text-end">39,745,562,000</td>
+                                        <td class="text-end">37,690,508,000</td>
+                                        <td class="text-end">37,031,943,000</td>
+                                    </tr>
+                                    <tr class="highlite">
+                                        <th>NON CURRENT ASSETS</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold text-blue">FIXED ASSET</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tangible Assets</td>
+                                        <td class="text-end">502,419,000</td>
+                                        <td class="text-end">565,934,000</td>
+                                        <td class="text-end">539,662,000</td>
+                                        <td class="text-end">376,846,000</td>
+                                        <td class="text-end">358,355,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Intangible Assets</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">5,965,000</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Net Block of Assets</td>
+                                        <td class="text-end fw-bold">502,419,000</td>
+                                        <td class="text-end fw-bold">565,934,000</td>
+                                        <td class="text-end fw-bold">545,627,000</td>
+                                        <td class="text-end fw-bold">377,146,000</td>
+                                        <td class="text-end fw-bold">370,453,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Capital Work In Progress</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Intangible Asset under Development</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Total Fixed Asset</td>
+                                        <td class="text-end fw-bold">502,419,000</td>
+                                        <td class="text-end fw-bold">565,934,000</td>
+                                        <td class="text-end fw-bold">545,627,000</td>
+                                        <td class="text-end fw-bold">377,146,000</td>
+                                        <td class="text-end fw-bold">370,453,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Non Current Investment</td>
+                                        <td class="text-end">17,568,548,000</td>
+                                        <td class="text-end">16,437,557,000</td>
+                                        <td class="text-end">16,762,946,000</td>
+                                        <td class="text-end">13,870,407,000</td>
+                                        <td class="text-end">13,667,050,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deferred Tax Assets (Net)</td>
+                                        <td class="text-end">438,686,000</td>
+                                        <td class="text-end">414,020,000</td>
+                                        <td class="text-end">56,087,000</td>
+                                        <td class="text-end">67,812,000</td>
+                                        <td class="text-end">75,642,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Long-term Loans & Advances</td>
+                                        <td class="text-end">45,800,000</td>
+                                        <td class="text-end">51,901,000</td>
+                                        <td class="text-end">56,087,000</td>
+                                        <td class="text-end">67,812,000</td>
+                                        <td class="text-end">75,642,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other Non Current Assets</td>
+                                        <td class="text-end">707,738,000</td>
+                                        <td class="text-end">333,610,000</td>
+                                        <td class="text-end">361,114,000</td>
+                                        <td class="text-end">327,427,000</td>
+                                        <td class="text-end">82,452,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Total Fixed Asset</td>
+                                        <td class="text-end fw-bold">502,419,000</td>
+                                        <td class="text-end fw-bold">565,934,000</td>
+                                        <td class="text-end fw-bold">545,627,000</td>
+                                        <td class="text-end fw-bold">377,146,000</td>
+                                        <td class="text-end fw-bold">370,453,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Non Current Investment</td>
+                                        <td class="text-end">17,568,548,000</td>
+                                        <td class="text-end">16,437,557,000</td>
+                                        <td class="text-end">16,762,946,000</td>
+                                        <td class="text-end">13,870,407,000</td>
+                                        <td class="text-end">13,667,050,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deferred Tax Assets (Net)</td>
+                                        <td class="text-end">17,568,548,000</td>
+                                        <td class="text-end">16,437,557,000</td>
+                                        <td class="text-end">16,762,946,000</td>
+                                        <td class="text-end">13,870,407,000</td>
+                                        <td class="text-end">13,667,050,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Long-term Loans & Advances</td>
+                                        <td class="text-end">17,568,548,000</td>
+                                        <td class="text-end">16,437,557,000</td>
+                                        <td class="text-end">16,762,946,000</td>
+                                        <td class="text-end">13,870,407,000</td>
+                                        <td class="text-end">13,667,050,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other Non Current Assets</td>
+                                        <td class="text-end">17,568,548,000</td>
+                                        <td class="text-end">16,437,557,000</td>
+                                        <td class="text-end">16,762,946,000</td>
+                                        <td class="text-end">13,870,407,000</td>
+                                        <td class="text-end">13,667,050,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Total Non Current Assets</td>
+                                        <td class="text-end fw-bold">19,263,191,000</td>
+                                        <td class="text-end fw-bold">17,803,022,000</td>
+                                        <td class="text-end fw-bold">17,955,772,000</td>
+                                        <td class="text-end fw-bold">14,848,700,000</td>
+                                        <td class="text-end fw-bold">14,359,428,000</td>
+                                    </tr>
+                                    <tr class="highlite">
+                                        <th>CURRENT ASSETS</th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Current Investment</td>
+                                        <td class="text-end">15,347,000</td>
+                                        <td class="text-end">247,750,000</td>
+                                        <td class="text-end">28,719,000</td>
+                                        <td class="text-end">120,025,000</td>
+                                        <td class="text-end">120,040,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Inventories</td>
+                                        <td class="text-end">9,476,595,000</td>
+                                        <td class="text-end">10,300,780,000</td>
+                                        <td class="text-end">13,382,866,000</td>
+                                        <td class="text-end">12,240,037,000</td>
+                                        <td class="text-end">12,207,374,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trade Receivables</td>
+                                        <td class="text-end">3,505,570,000</td>
+                                        <td class="text-end">3,190,697,000</td>
+                                        <td class="text-end">893,053,000</td>
+                                        <td class="text-end">1,897,759,000</td>
+                                        <td class="text-end">2,311,505,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cash & Cash Equivalents</td>
+                                        <td class="text-end">155,448,000</td>
+                                        <td class="text-end">247,742,000</td>
+                                        <td class="text-end">109,842,000</td>
+                                        <td class="text-end">130,148,000</td>
+                                        <td class="text-end">215,776,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Short-term Loans & Advances</td>
+                                        <td class="text-end">738,232,000</td>
+                                        <td class="text-end">973,905,000</td>
+                                        <td class="text-end">632,284,000</td>
+                                        <td class="text-end">294,845,000</td>
+                                        <td class="text-end">280,001,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other Current Assets</td>
+                                        <td class="text-end">8,857,272,000</td>
+                                        <td class="text-end">9,408,309,000</td>
+                                        <td class="text-end">6,743,026,000</td>
+                                        <td class="text-end">8,158,994,000</td>
+                                        <td class="text-end">7,537,819,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Total Current Assets</td>
+                                        <td class="text-end fw-bold">22,748,464,000</td>
+                                        <td class="text-end fw-bold">24,369,183,000</td>
+                                        <td class="text-end fw-bold">21,789,790,000</td>
+                                        <td class="text-end fw-bold">22,841,808,000</td>
+                                        <td class="text-end fw-bold">22,672,515,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other Total Assets</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr class="total-amount">
+                                        <td>Total Assets</td>
+                                        <td class="text-end">41,747,375,000</td>
+                                        <td class="text-end">42,172,205,000</td>
+                                        <td class="text-end">39,745,562,000</td>
+                                        <td class="text-end">37,690,508,000</td>
+                                        <td class="text-end">37,031,943,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- profit and loss data -->
+                        <div class="tab-pane fade" id="profitLoss" role="tabpanel" aria-labelledby="nav-profitLoss-tab">
+                            <table class="table custom-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 30%;">Particulars</th>
+                                        <th class="text-end"><a href="#" class="pdf-red"><i
+                                                    class="bi bi-file-earmark-pdf-fill"></i></a> 2017-2018 <span
+                                                class="text-red">*</span></th>
+                                        <th class="text-end"><a href="#" class="pdf-red"><i
+                                                    class="bi bi-file-earmark-pdf-fill"></i></a> 2018-2019</th>
+                                        <th class="text-end"><a href="#" class="pdf-red"><i
+                                                    class="bi bi-file-earmark-pdf-fill"></i></a> 2019-2020</th>
+                                        <th class="text-end"><a href="#" data-bs-toggle="tooltip" title="Source: Stock Exchange"><i class="bi bi-info-circle"></i></a> 2020-2021
+                                        </th>
+                                        <th class="text-end"><a href="#"  data-bs-toggle="tooltip" title="Source: Stock Exchange"><i class="bi bi-info-circle"></i></a> 2021-2022
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlite">
+                                        <th>SHAREHOLDERS FUND</th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Share Capital</td>
+                                        <td class="text-end">727,359,000</td>
+                                        <td class="text-end">727,359,000</td>
+                                        <td class="text-end">727,359,000</td>
+                                        <td class="text-end">727,359,000</td>
+                                        <td class="text-end">727,359,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reserves & Surplus</td>
+                                        <td class="text-end">16,821,417,000</td>
+                                        <td class="text-end">16,615,685,000</td>
+                                        <td class="text-end">16,026,985,000</td>
+                                        <td class="text-end">14,455,014,000</td>
+                                        <td class="text-end">13,286,645,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Money Received against Warrants</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Networth</td>
+                                        <td class="text-end fw-bold">17,548,776,000</td>
+                                        <td class="text-end fw-bold">17,343,044,000</td>
+                                        <td class="text-end fw-bold">16,754,344,000</td>
+                                        <td class="text-end fw-bold">15,182,373,000</td>
+                                        <td class="text-end fw-bold">14,014,004,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Share Application Money Pending Allotment</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deferred Government Grants</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Minority Interest</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr class="highlite">
+                                        <th>NON CURRENT LIABILITIES</th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Long-term Borrowings</td>
+                                        <td class="text-end">654,745,000</td>
+                                        <td class="text-end">550,461,000</td>
+                                        <td class="text-end">305,059,000</td>
+                                        <td class="text-end">285,032,000</td>
+                                        <td class="text-end">143,509,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deferred Tax Liabilities</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other Non Current Liabilities</td>
+                                        <td class="text-end">757,158,000</td>
+                                        <td class="text-end">507,677,000</td>
+                                        <td class="text-end">303,564,000</td>
+                                        <td class="text-end">415,620,000</td>
+                                        <td class="text-end">325,129,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Long-term Provisions</td>
+                                        <td class="text-end">20,894,000</td>
+                                        <td class="text-end">21,800,000</td>
+                                        <td class="text-end">19,891,000</td>
+                                        <td class="text-end">20,294,000</td>
+                                        <td class="text-end">16,504,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Total Non Current Liabilities</td>
+                                        <td class="text-end fw-bold">1,432,797,000</td>
+                                        <td class="text-end fw-bold">1,079,938,000</td>
+                                        <td class="text-end fw-bold">628,514,000</td>
+                                        <td class="text-end fw-bold">720,946,000</td>
+                                        <td class="text-end fw-bold">485,142,000</td>
+                                    </tr>
+                                    <tr class="highlite">
+                                        <th>CURRENT LIABILITIES</th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Short-term Borrowings</td>
+                                        <td class="text-end">2,677,744,000</td>
+                                        <td class="text-end">2,532,710,000</td>
+                                        <td class="text-end">2,311,813,000</td>
+                                        <td class="text-end">4,567,266,000</td>
+                                        <td class="text-end">4,362,829,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trade Payables</td>
+                                        <td class="text-end">1,038,945,000</td>
+                                        <td class="text-end">1,194,632,000</td>
+                                        <td class="text-end">1,323,338,000</td>
+                                        <td class="text-end">1,261,500,000</td>
+                                        <td class="text-end">1,360,303,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other Current Liabilities</td>
+                                        <td class="text-end">1,038,945,000</td>
+                                        <td class="text-end">1,194,632,000</td>
+                                        <td class="text-end">1,323,338,000</td>
+                                        <td class="text-end">1,261,500,000</td>
+                                        <td class="text-end">1,360,303,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Short-term Provisions</td>
+                                        <td class="text-end">29,031,000</td>
+                                        <td class="text-end">34,498,000</td>
+                                        <td class="text-end">40,738,000</td>
+                                        <td class="text-end">60,708,000</td>
+                                        <td class="text-end">21,208,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Total Current Liabilities</td>
+                                        <td class="text-end fw-bold">22,765,802,000</td>
+                                        <td class="text-end fw-bold">23,749,223,000</td>
+                                        <td class="text-end fw-bold">22,362,704,000</td>
+                                        <td class="text-end fw-bold">21,787,189,000</td>
+                                        <td class="text-end fw-bold">22,532,797,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other Equity & Liabilities</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr class="total-amount">
+                                        <td>Total Equity & Liabilities</td>
+                                        <td class="text-end">41,747,375,000</td>
+                                        <td class="text-end">42,172,205,000</td>
+                                        <td class="text-end">39,745,562,000</td>
+                                        <td class="text-end">37,690,508,000</td>
+                                        <td class="text-end">37,031,943,000</td>
+                                    </tr>
+                                    <tr class="highlite">
+                                        <th>NON CURRENT ASSETS</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold text-blue">FIXED ASSET</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tangible Assets</td>
+                                        <td class="text-end">502,419,000</td>
+                                        <td class="text-end">565,934,000</td>
+                                        <td class="text-end">539,662,000</td>
+                                        <td class="text-end">376,846,000</td>
+                                        <td class="text-end">358,355,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Intangible Assets</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">5,965,000</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Net Block of Assets</td>
+                                        <td class="text-end fw-bold">502,419,000</td>
+                                        <td class="text-end fw-bold">565,934,000</td>
+                                        <td class="text-end fw-bold">545,627,000</td>
+                                        <td class="text-end fw-bold">377,146,000</td>
+                                        <td class="text-end fw-bold">370,453,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Capital Work In Progress</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Intangible Asset under Development</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Total Fixed Asset</td>
+                                        <td class="text-end fw-bold">502,419,000</td>
+                                        <td class="text-end fw-bold">565,934,000</td>
+                                        <td class="text-end fw-bold">545,627,000</td>
+                                        <td class="text-end fw-bold">377,146,000</td>
+                                        <td class="text-end fw-bold">370,453,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Non Current Investment</td>
+                                        <td class="text-end">17,568,548,000</td>
+                                        <td class="text-end">16,437,557,000</td>
+                                        <td class="text-end">16,762,946,000</td>
+                                        <td class="text-end">13,870,407,000</td>
+                                        <td class="text-end">13,667,050,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deferred Tax Assets (Net)</td>
+                                        <td class="text-end">438,686,000</td>
+                                        <td class="text-end">414,020,000</td>
+                                        <td class="text-end">56,087,000</td>
+                                        <td class="text-end">67,812,000</td>
+                                        <td class="text-end">75,642,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Long-term Loans & Advances</td>
+                                        <td class="text-end">45,800,000</td>
+                                        <td class="text-end">51,901,000</td>
+                                        <td class="text-end">56,087,000</td>
+                                        <td class="text-end">67,812,000</td>
+                                        <td class="text-end">75,642,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other Non Current Assets</td>
+                                        <td class="text-end">707,738,000</td>
+                                        <td class="text-end">333,610,000</td>
+                                        <td class="text-end">361,114,000</td>
+                                        <td class="text-end">327,427,000</td>
+                                        <td class="text-end">82,452,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Total Fixed Asset</td>
+                                        <td class="text-end fw-bold">502,419,000</td>
+                                        <td class="text-end fw-bold">565,934,000</td>
+                                        <td class="text-end fw-bold">545,627,000</td>
+                                        <td class="text-end fw-bold">377,146,000</td>
+                                        <td class="text-end fw-bold">370,453,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Non Current Investment</td>
+                                        <td class="text-end">17,568,548,000</td>
+                                        <td class="text-end">16,437,557,000</td>
+                                        <td class="text-end">16,762,946,000</td>
+                                        <td class="text-end">13,870,407,000</td>
+                                        <td class="text-end">13,667,050,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deferred Tax Assets (Net)</td>
+                                        <td class="text-end">17,568,548,000</td>
+                                        <td class="text-end">16,437,557,000</td>
+                                        <td class="text-end">16,762,946,000</td>
+                                        <td class="text-end">13,870,407,000</td>
+                                        <td class="text-end">13,667,050,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Long-term Loans & Advances</td>
+                                        <td class="text-end">17,568,548,000</td>
+                                        <td class="text-end">16,437,557,000</td>
+                                        <td class="text-end">16,762,946,000</td>
+                                        <td class="text-end">13,870,407,000</td>
+                                        <td class="text-end">13,667,050,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other Non Current Assets</td>
+                                        <td class="text-end">17,568,548,000</td>
+                                        <td class="text-end">16,437,557,000</td>
+                                        <td class="text-end">16,762,946,000</td>
+                                        <td class="text-end">13,870,407,000</td>
+                                        <td class="text-end">13,667,050,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Total Non Current Assets</td>
+                                        <td class="text-end fw-bold">19,263,191,000</td>
+                                        <td class="text-end fw-bold">17,803,022,000</td>
+                                        <td class="text-end fw-bold">17,955,772,000</td>
+                                        <td class="text-end fw-bold">14,848,700,000</td>
+                                        <td class="text-end fw-bold">14,359,428,000</td>
+                                    </tr>
+                                    <tr class="highlite">
+                                        <th>CURRENT ASSETS</th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                        <th class="text-end"></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Current Investment</td>
+                                        <td class="text-end">15,347,000</td>
+                                        <td class="text-end">247,750,000</td>
+                                        <td class="text-end">28,719,000</td>
+                                        <td class="text-end">120,025,000</td>
+                                        <td class="text-end">120,040,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Inventories</td>
+                                        <td class="text-end">9,476,595,000</td>
+                                        <td class="text-end">10,300,780,000</td>
+                                        <td class="text-end">13,382,866,000</td>
+                                        <td class="text-end">12,240,037,000</td>
+                                        <td class="text-end">12,207,374,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trade Receivables</td>
+                                        <td class="text-end">3,505,570,000</td>
+                                        <td class="text-end">3,190,697,000</td>
+                                        <td class="text-end">893,053,000</td>
+                                        <td class="text-end">1,897,759,000</td>
+                                        <td class="text-end">2,311,505,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cash & Cash Equivalents</td>
+                                        <td class="text-end">155,448,000</td>
+                                        <td class="text-end">247,742,000</td>
+                                        <td class="text-end">109,842,000</td>
+                                        <td class="text-end">130,148,000</td>
+                                        <td class="text-end">215,776,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Short-term Loans & Advances</td>
+                                        <td class="text-end">738,232,000</td>
+                                        <td class="text-end">973,905,000</td>
+                                        <td class="text-end">632,284,000</td>
+                                        <td class="text-end">294,845,000</td>
+                                        <td class="text-end">280,001,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other Current Assets</td>
+                                        <td class="text-end">8,857,272,000</td>
+                                        <td class="text-end">9,408,309,000</td>
+                                        <td class="text-end">6,743,026,000</td>
+                                        <td class="text-end">8,158,994,000</td>
+                                        <td class="text-end">7,537,819,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Total Current Assets</td>
+                                        <td class="text-end fw-bold">22,748,464,000</td>
+                                        <td class="text-end fw-bold">24,369,183,000</td>
+                                        <td class="text-end fw-bold">21,789,790,000</td>
+                                        <td class="text-end fw-bold">22,841,808,000</td>
+                                        <td class="text-end fw-bold">22,672,515,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other Total Assets</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                        <td class="text-end">0</td>
+                                    </tr>
+                                    <tr class="total-amount">
+                                        <td>Total Assets</td>
+                                        <td class="text-end">41,747,375,000</td>
+                                        <td class="text-end">42,172,205,000</td>
+                                        <td class="text-end">39,745,562,000</td>
+                                        <td class="text-end">37,690,508,000</td>
+                                        <td class="text-end">37,031,943,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- caseflow data -->
+                        <div class="tab-pane fade" id="cashFlow" role="tabpanel" aria-labelledby="nav-cashFlow-tab">
+                            <table class="table custom-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 30%;">Particulars</th>
+                                        <th class="text-end"><a href="#" class="pdf-red"><i
+                                                    class="bi bi-file-earmark-pdf-fill"></i></a> 2017-2018 <span
+                                                class="text-red">*</span></th>
+                                        <th class="text-end"><a href="#" class="pdf-red"><i
+                                                    class="bi bi-file-earmark-pdf-fill"></i></a> 2018-2019</th>
+                                        <th class="text-end"><a href="#" class="pdf-red"><i
+                                                    class="bi bi-file-earmark-pdf-fill"></i></a> 2019-2020</th>
+                                        <th class="text-end"><a href="#" data-bs-toggle="tooltip" title="Source: Stock Exchange"><i class="bi bi-info-circle"></i></a> 2020-2021
+                                        </th>
+                                        <th class="text-end"><a href="#"  data-bs-toggle="tooltip" title="Source: Stock Exchange"><i class="bi bi-info-circle"></i></a> 2021-2022
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Revenue from Operations</td>
+                                        <td class="text-end">3,418,657,000</td>
+                                        <td class="text-end">4,140,450,000</td>
+                                        <td class="text-end">2,554,838,000</td>
+                                        <td class="text-end">2,377,588,000</td>
+                                        <td class="text-end">1,828,033,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>EBITDA</td>
+                                        <td class="text-end">765,863,000</td>
+                                        <td class="text-end">440,834,000</td>
+                                        <td class="text-end">712,442,000</td>
+                                        <td class="text-end">-1,467,407,000</td>
+                                        <td class="text-end">-1,233,922,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PAT</td>
+                                        <td class="text-end">265,389,000</td>
+                                        <td class="text-end">-70,944,000</td>
+                                        <td class="text-end">-594,645,000</td>
+                                        <td class="text-end">-1,559,902,000</td>
+                                        <td class="text-end">-1,208,885,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Networth</td>
+                                        <td class="text-end">17,548,776,000</td>
+                                        <td class="text-end">17,343,044,000</td>
+                                        <td class="text-end">16,754,344,000</td>
+                                        <td class="text-end">15,182,373,000</td>
+                                        <td class="text-end">14,014,004,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Long - term Borrowings</td>
+                                        <td class="text-end">654,745,000</td>
+                                        <td class="text-end">550,461,000</td>
+                                        <td class="text-end">305,059,000</td>
+                                        <td class="text-end">285,032,000</td>
+                                        <td class="text-end">143,509,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- ratios data -->
+                        <div class="tab-pane fade" id="ratios" role="tabpanel" aria-labelledby="nav-ratios-tab">
+                            <table class="table custom-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 30%;">Particulars</th>
+                                        <th class="text-end"><a href="#" class="pdf-red"><i
+                                                    class="bi bi-file-earmark-pdf-fill"></i></a> 2017-2018 <span
+                                                class="text-red">*</span></th>
+                                        <th class="text-end"><a href="#" class="pdf-red"><i
+                                                    class="bi bi-file-earmark-pdf-fill"></i></a> 2018-2019</th>
+                                        <th class="text-end"><a href="#" class="pdf-red"><i
+                                                    class="bi bi-file-earmark-pdf-fill"></i></a> 2019-2020</th>
+                                        <th class="text-end"><a href="#" data-bs-toggle="tooltip" title="Source: Stock Exchange"><i class="bi bi-info-circle"></i></a> 2020-2021
+                                        </th>
+                                        <th class="text-end"><a href="#"  data-bs-toggle="tooltip" title="Source: Stock Exchange"><i class="bi bi-info-circle"></i></a> 2021-2022
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Revenue from Operations</td>
+                                        <td class="text-end">3,418,657,000</td>
+                                        <td class="text-end">4,140,450,000</td>
+                                        <td class="text-end">2,554,838,000</td>
+                                        <td class="text-end">2,377,588,000</td>
+                                        <td class="text-end">1,828,033,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>EBITDA</td>
+                                        <td class="text-end">765,863,000</td>
+                                        <td class="text-end">440,834,000</td>
+                                        <td class="text-end">712,442,000</td>
+                                        <td class="text-end">-1,467,407,000</td>
+                                        <td class="text-end">-1,233,922,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PAT</td>
+                                        <td class="text-end">265,389,000</td>
+                                        <td class="text-end">-70,944,000</td>
+                                        <td class="text-end">-594,645,000</td>
+                                        <td class="text-end">-1,559,902,000</td>
+                                        <td class="text-end">-1,208,885,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Networth</td>
+                                        <td class="text-end">17,548,776,000</td>
+                                        <td class="text-end">17,343,044,000</td>
+                                        <td class="text-end">16,754,344,000</td>
+                                        <td class="text-end">15,182,373,000</td>
+                                        <td class="text-end">14,014,004,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Long - term Borrowings</td>
+                                        <td class="text-end">654,745,000</td>
+                                        <td class="text-end">550,461,000</td>
+                                        <td class="text-end">305,059,000</td>
+                                        <td class="text-end">285,032,000</td>
+                                        <td class="text-end">143,509,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- financial inner tabs start here -->
+                </div>
+                <!-- =========standalone content end here ==========-->
+                <div class="tab-pane fade" id="Consolidated" role="tabpanel" aria-labelledby="nav-Consolidated-tab">
+                    2222
+                </div>
+
+                <div class="tab-pane fade" id="businessConstituents" role="tabpanel"
+                    aria-labelledby="nav-businessConstituents-tab">
+                    
+                    <div class="custom-panel">
+                        <img src="../../assets/images/busunessConstituent.png" alt="busunessConstituent" class="mx-auto d-block">
+                        <p>Kindly place GST request to view further details.</p>
+                        <button class="btn btn-teal btn-teal-outline">Place GST Request</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 secondary_content" style="display: none;">
+            12345678
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- profile Modal -->
+<div class="modal custom-modal fade" id="profile">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Financials</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>This section provides a snapshot of key financial indicators of the company and detailed information
+                    about Audited annual financial statements - P&L Account and Balance sheet for last 3 to 5 years. It
+                    also provides ability to download documents reported by the company at MCA. Corpository team has
+                    also calculated key financial ratios based on the reported financial statements.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- disclamber Modal -->
+<div class="modal custom-modal fade" id="disclaimer">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Shareholding Pattern</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>All Financial details are available from financial year 2013-14 onwards.</p>
+                <p>Some particulars have not been shown to maintain consistency of format.</p>
+                <p>                
+                    <strong>Standalone/Consolidated Balance Sheet</strong>
+                </p>
+                <p>Trade Receivables: Current Trade Receivables amount is reflected in "Trade Receivables" under Current
+                    Assets section. Non Current Trade Receivables amount is included in "Other Non Current Assets" under
+                    Non Current Assets section.</p>
+                <p>Trade Payables: Current Trade Payables amount is reflected in "Trade Payables" under Current
+                    Liabilities section. Non Current Trade Payables amount is included in "Other Non Current
+                    Liabilities" under Non Current Liabilities section.</p>
+                <p>Deferred Government Grants: Deferred Government Grants includes amount of Current and Non Current
+                    Deferred Government Grants. Due to this, Total Non Current Liability will be reduced by the amount
+                    of "Non Current Deferred Government Grants” and Total Current Liability will be reduced by the
+                    amount of "Current Deferred Government Grants" to maintain consistency of format.</p>
+
+            </div>
         </div>
     </div>
 </div>

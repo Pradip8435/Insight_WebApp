@@ -23,34 +23,34 @@ const appRoutes:Routes =[
     path:'', component:CompanyProfileComponent
   },
   {
-    path:'directorComponent', component:DirectorComponent
+    path:'director', component:DirectorComponent
   },
   {
-    path:'chargesComponent', component:ChargesComponent
+    path:'charges', component:ChargesComponent
   },
   {
-    path:'ratingComponent', component:RatingComponent
+    path:'rating', component:RatingComponent
   },
   {
-    path:'financialsComponent', component:FinancialsComponent
+    path:'financials', component:FinancialsComponent
   },
   {
-    path:'autitorsComponent', component:AuditorsComponent
+    path:'auditors', component:AuditorsComponent
   },
   {
-    path:'peersComponent', component:PeersComponent
+    path:'peers', component:PeersComponent
   },
   {
-    path:'shareholdingComponent', component:ShareholdingComponent
+    path:'shareholding', component:ShareholdingComponent
   },
   {
     path: 'directorDetails',component: DirectorDetailsComponent
   },
   {
-    path:'flagsComponent',component: FlagsComponent
+    path:'flags',component: FlagsComponent
   },
   {
-    path: 'newsComponent',component: NewsComponent
+    path: 'news',component: NewsComponent
   }
 
 ]

@@ -3,69 +3,279 @@
         <div class="col-12 title-section d-flex justify-content-between ">
             <div class="title-left-sec">
                 <i class="bi bi-coin"></i>
-                <span class="tabs-name">charges</span>
+                <h2 class="tabs-name">charges</h2>
                 <a href="#" data-bs-target="#profile" data-bs-toggle="modal"><i class="bi bi-info-circle"></i></a>
-                <a href="#" class="text-danger" data-bs-target="#disclaimer" data-bs-toggle="modal"><i class="bi bi-exclamation-triangle"></i></a>
+                <a href="#" class="text-red" data-bs-target="#disclaimer" data-bs-toggle="modal"><i
+                        class="bi bi-exclamation-triangle"></i></a>
                 <span class="AsOndate">As On : <span>03/03/2021</span></span>
             </div>
             <div>
+                <button class="btn btn-red">Imp. Note</button>
                 <button class="btn btn-teal btn-teal-outline"><i class="bi bi-arrow-clockwise"></i> Update Info</button>
+                <button class="btn btn-teal btn-teal-outline"><i class="bi bi-filetype-csv"></i> Export to CSV</button>
             </div>
+        </div>
+        <div class="col-md-12 charges-total-sec d-flex justify-content-between">
+            <ul class="nav">
+                <li>
+                    <span class="closed"></span>
+                    <label for="closed">Close</label>
+                </li>
+                <li>
+                    <span class="open"></span>
+                    <label for="open">Open</label>
+                </li>
+            </ul>
+            <span class="openCharge">Total Open Charge:<strong> 55,135,198,323</strong></span>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-12">
             <div class="card">
-               <div class="table-responsive">
-                <table class="table custom-table" style="width:100%">
-                    <thead>
-                        <tr>
-                            <th>Charge ID</th>
-                            <th>Date of Creation</th>
-                            <th>Date of Modification</th>
-                            <th>Date of Satisfaction</th>
-                            <th>Charge amount</th>
-                            <th>Charge holder</th>
-                            <th>Asset under charge</th>
-                            <th>Charge holder address</th>
-                        </tr>
-                        <tr>
-                            <th><input type="text" name="" id=""></th>
-                            <th><input type="text" name="" id=""></th>
-                            <th><input type="text" name="" id=""></th>
-                            <th><input type="text" name="" id=""></th>
-                            <th><input type="text" name="" id=""></th>
-                            <th><input type="text" name="" id=""></th>
-                            <th><input type="text" name="" id=""></th>
-                            <th><input type="text" name="" id=""></th>
-                        </tr>
-                        
-                    </thead>
-                    
-                    <tbody>
-                        <tr>
-                            <td>100668178</td>
-                            <td>14/01/2023</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td class="text-end">3,703,898,323</td>
-                            <td>IDBI TRUSTEESHIP SERVICES LIMITED</td>
-                            <td>-</td>
-                            <td>Asian Bldg. Ground Floor 17 R.Kamani MargBallard EstateMumbai Mumbai MH400001IN</td>
-                        </tr>
-                        <!-- <tr>
-                            <td class="">100668178</td>
-                            <td>14/01/2023</td>
-                            <td class="">-</td>
-                            <td>-</td>
-                            <td class="text-end">3,703,898,323</td>
-                            <td>IDBI TRUSTEESHIP SERVICES LIMITED</td>
-                            <td>-</td>
-                            <td>Asian Bldg. Ground Floor 17 R.Kamani MargBallard EstateMumbaiMumbaiMH400001IN</td>
-                        </tr> -->
-                    </tbody>
-                </table>
-               </div>
+                <div class="table-responsive">
+                    <table class="table custom-table m-0" id="chargedatatable" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th style="width: 130px;">Charge ID</th>
+                                <th style="width: 130px;">Date of Creation</th>
+                                <th>Date of Modification</th>
+                                <th>Date of Satisfaction</th>
+                                <th>Charge amount</th>
+                                <th>Charge holder</th>
+                                <th>Asset under charge</th>
+                                <th>Charge holder address</th>
+                            </tr>
+                            <!-- <tr>
+                                <th><input type="text" name="" id=""></th>
+                                <th><input type="text" name="" id=""></th>
+                                <th><input type="text" name="" id=""></th>
+                                <th><input type="text" name="" id=""></th>
+                                <th><input type="text" name="" id=""></th>
+                                <th><input type="text" name="" id=""></th>
+                                <th><input type="text" name="" id=""></th>
+                                <th><input type="text" name="" id=""></th>
+                            </tr> -->
+
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="open">
+                                    <span class="d-block">100556902</span>
+
+                                </td>
+                                <td>14/01/2023</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td class="text-end">3,703,898,323</td>
+                                <td>IDBI TRUSTEESHIP SERVICES LIMITED</td>
+                                <td>-</td>
+                                <td>Asian Bldg. Ground Floor 17 R.Kamani MargBallard EstateMumbai Mumbai MH400001IN</td>
+                            </tr>
+                            <tr>
+                                <td class="open">
+                                    <span class="d-block">100556902</span>
+                                    Other than Debenture
+                                    <a href="" class="d-flex" data-bs-toggle="collapse"
+                                        data-bs-target="#nested_table"><i class="bi bi-plus-square"></i> Charge
+                                        Details</a>
+                                </td>
+                                <td>30/03/2022 <a href="#" class="pdf-red"><i
+                                            class="bi bi-file-earmark-pdf-fill"></i></a></td>
+                                <td class="">22/06/2022 <a href="#" class="pdf-red"><i
+                                            class="bi bi-file-earmark-pdf-fill"></i></a></td>
+                                <td>-</td>
+                                <td class="text-end">220,000,000</td>
+                                <td>ANAND RATHI GLOBAL FINANCE LIMITED</td>
+                                <td>Immovable property or any interest therein</td>
+                                <td>Express Zone A Wing 10th FloorWestern Express Highway Goregaon (East) Mumbai 400063
+                                    IN</td>
+                            </tr>
+                            <tr class="collapse" id="nested_table">
+                                <td colspan="8">
+                                    <table class="table custom-table">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 45%;">Charge ID</th>
+                                                <th>100556902</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Address</td>
+                                                <td>BNP Paribas House 1 North Avenue Maker MaxityBandra-Kurla Complex
+                                                    Bandra (East)MumbaiMH400051IN</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Email ID</td>
+                                                <td><a href="#">arkadeep.biswas@asia.bnpparibas.com</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Charge holder name</td>
+                                                <td>BNP Paribas</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Type of Security</td>
+                                                <td>Other than Debentures</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table custom-table m-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Charge Details</th>
+                                                <th>Assets under charge</th>
+                                                <th class="text-end">Amount</th>
+                                                <th style="width: 130px;">Rate of Interest</th>
+                                                <th>Margin</th>
+                                                <th>Charge Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        <span class="d-block inner-bold-text">Type</span>
+                                                        Creation
+                                                    </span>
+                                                    <span>
+                                                        <span class="d-block inner-bold-text">Date</span>
+                                                        30/03/2022 <a href="#" class="pdf-red"><i
+                                                                class="bi bi-file-earmark-pdf-fill"></i></a>
+                                                    </span>
+                                                    <span>
+                                                        <span class="d-block inner-bold-text">Consortium Finance</span>
+                                                        No
+                                                    </span>
+                                                </td>                                                
+                                                <td>Charge On Immovable Property Or Any Interest Therein</td>
+                                                <td class="text-end">200,000,000</td>
+                                                <td>15%</td>
+                                                <td>NA</td>
+                                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#details"><i class="bi bi-plus-square"></i> View Detail</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        <span class="d-block inner-bold-text">Type</span>
+                                                        Creation
+                                                    </span>
+                                                    <span>
+                                                        <span class="d-block inner-bold-text">Date</span>
+                                                        30/03/2022 <a href="#" class="pdf-red"><i
+                                                                class="bi bi-file-earmark-pdf-fill"></i></a>
+                                                    </span>
+                                                    <span>
+                                                        <span class="d-block inner-bold-text">Consortium Finance</span>
+                                                        No
+                                                    </span>
+                                                </td>
+                                                <td>Charge On Immovable Property Or Any Interest Therein</td>
+                                                <td class="text-end">220,000,000</td>
+                                                <td>15% p.a. plus other statutory levy (if any) on the amount
+                                                    outstanding each day.</td>
+                                                <td>NA</td>
+                                                <td><a href="#"><i class="bi bi-plus-square"></i> View Detail</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="open">
+                                    <span class="d-block">100203493</span>
+                                    Other than Debenture
+                                    <a href="" class="d-flex"><i class="bi bi-plus-square"></i> Charge Details</a>
+                                </td>
+                                <td>04/09/2018 <a href="#" class="pdf-red"><i
+                                            class="bi bi-file-earmark-pdf-fill"></i></a></td>
+                                <td class="">-</td>
+                                <td>-</td>
+                                <td class="text-end">1,700,000,000</td>
+                                <td>INDIABULLS HOUSING FINANCE LIMITED</td>
+                                <td>Book debts; As per attached Deed of Hypothecation</td>
+                                <td>M - 62 & 63FIRST FLOOR CONNAUGHT PLACENEW DELHIDe110001IN</td>
+                            </tr>
+                            <tr>
+                                <td class="close">
+                                    <span class="d-block">100105109</span>
+                                    Other than Debenture
+                                    <a href="" class="d-flex"><i class="bi bi-plus-square"></i> Charge Details</a>
+                                </td>
+                                <td>18/04/2017 <a href="#" class="pdf-red"><i
+                                            class="bi bi-file-earmark-pdf-fill"></i></a></td>
+                                <td>06/06/2019 <a href="#" class="pdf-red"><i
+                                            class="bi bi-file-earmark-pdf-fill"></i></a></td>
+                                <td>18/05/2022 <a href="#" class="pdf-red"><i
+                                            class="bi bi-file-earmark-pdf-fill"></i></a></td>
+                                <td class="text-end">295,000,000</td>
+                                <td>SICOM LIMITED</td>
+                                <td>Immovable property or any interest therein; Pledge of Shares</td>
+                                <td>SOLITAIRE CORPORATE PARK BUILDING NO. 4 GURUHARGOVINDJI ROAD ANDHERI (EAST) MumbaiMa
+                                    400093IN</td>
+                            </tr>
+                            <tr>
+                                <td class="close">
+                                    <span class="d-block">100105117</span>
+                                        Other than Debenture
+                                    <a href="" class="d-flex"><i class="bi bi-plus-square"></i> Charge Details</a>
+                                </td>
+                                <td>18/04/2017 <a href="#" class="pdf-red"><i
+                                            class="bi bi-file-earmark-pdf-fill"></i></a></td>
+                                <td>06/06/2019 <a href="#" class="pdf-red"><i
+                                            class="bi bi-file-earmark-pdf-fill"></i></a></td>
+                                <td>18/05/2022 <a href="#" class="pdf-red"><i
+                                            class="bi bi-file-earmark-pdf-fill"></i></a></td>
+                                <td class="text-end">200,000,000</td>
+                                <td>SICOM LIMITED</td>
+                                <td>Immovable property or any interest therein; Pledge of Shares</td>
+                                <td>SOLITAIRE CORPORATE PARK BUILDING NO. 4 GURUHARGOVINDJI ROAD ANDHERI (EAST) MumbaiMa
+                                    400093IN</td>
+                            </tr>
+                            <tr>
+                                <td class="close">
+                                    <span class="d-block">100105117</span>
+                                        Other than Debenture
+                                    <a href="" class="d-flex"><i class="bi bi-plus-square"></i> Charge Details</a>
+                                </td>
+                                <td>18/04/2017 <a href="#" class="pdf-red"><i
+                                            class="bi bi-file-earmark-pdf-fill"></i></a></td>
+                                <td>06/06/2019 <a href="#" class="pdf-red"><i
+                                            class="bi bi-file-earmark-pdf-fill"></i></a></td>
+                                <td>18/05/2022 <a href="#" class="pdf-red"><i
+                                            class="bi bi-file-earmark-pdf-fill"></i></a></td>
+                                <td class="text-end">200,000,000</td>
+                                <td>SICOM LIMITED</td>
+                                <td>Immovable property or any interest therein; Pledge of Shares</td>
+                                <td>SOLITAIRE CORPORATE PARK BUILDING NO. 4 GURUHARGOVINDJI ROAD ANDHERI (EAST) MumbaiMa
+                                    400093IN</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- details modal -->
+<div class="modal custom-modal fade" id="details">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Details</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><small>Description of Instrument Creating/Modifying Charge</small></p>
+                <p>As per the Mortgage Deed dated 30/03/2022</p>
+                <p><small>Term of Repayment/Principal Terms and Conditions</small></p>
+                <p>As per the attached Mortgage Deed dated 30/03/2022</p>
+                <p><small>Extent and Operation of the Charge</small></p>
+                <p>As per the attached Mortgage Deed dated 30/03/2022</p>
+                <p><small>Short Particular of the Property of Asset(s)</small></p>
+                <p>As per the Annexure I of Mortgage Deed dated 30/03/2022;</p>
             </div>
         </div>
     </div>
@@ -75,12 +285,16 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="exampleModalLabel">Profile</h4>
+                <h2 class="modal-title" id="exampleModalLabel">Charges</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>Profile includes information about the Formation, Type of Business, Ownership, Important Dates and
-                    Contact Details.</p>
+                <p>Charges are the securities provided by the company to its lenders. Charge holders are the lenders of
+                    the secured loans. This section shows all the current and past events of approvals for new secured
+                    loans (Creation of Charge), Revision in terms of existing secured loans (Modification of charge) and
+                    completion of repayment of a secured loan (Satisfaction of Charge). Every charge carries a unique
+                    charge ID from where a user can track entire charge history and details of terms of
+                    Borrowings/lending.</p>
             </div>
         </div>
     </div>
@@ -90,12 +304,11 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="exampleModalLabel">Disclaimer</h4>
+                <h2 class="modal-title" id="exampleModalLabel">Disclaimer</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>Entities with Common Directorships don't include common directorship companies of nominee and
-                    independent directors.</p>
+                <p>All Charge forms are available from 1st April, 2006.</p>
             </div>
         </div>
     </div>

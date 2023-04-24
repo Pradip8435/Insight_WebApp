@@ -1,8 +1,223 @@
 <div class="container">
     <div class="row">
-        <div class="col-12">
-            <p>shareholding works!</p>
+        <div class="col-12 title-section d-flex justify-content-between ">
+            <div class="title-left-sec">
+                <i class="bi bi-clock"></i>
+                <h2 class="tabs-name">shareholding</h2>
+                <a href="#" data-bs-target="#profile" data-bs-toggle="modal"><i class="bi bi-info-circle"></i></a>
+                <a href="#" class="text-red" data-bs-target="#disclaimer" data-bs-toggle="modal"><i
+                        class="bi bi-exclamation-triangle"></i></a>
+                <span class="AsOndate">As On : <span>03/03/2021</span></span>
+                <span class="financial-year">FY: 2022-2023</span>
 
+            </div>
+            <div>
+                <nav>
+                    <div class="nav nav-tabs custom-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#equity" type="button"
+                            id="nav-equity-tab" role="tab" aria-controls="equity" aria-selected="true">Equity</button>
+                        <button class="nav-link" id="nav-preference-tab" data-bs-toggle="tab"
+                            data-bs-target="#preference" type="button" role="tab" aria-controls="nav-preference"
+                            aria-selected="false">Preference</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="equity" role="tabpanel" aria-labelledby="nav-equity-tab">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card custom-card"></div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="table-responsive">
+                                <table class="table custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th rowspan="2">Shareholding <a href="#" data-bs-toggle="tooltip" title="Source: Stock Exchange"><i
+                                                        class="bi bi-info-circle"></i></a></th>
+                                            <th colspan="2">Q3 2022-2023</th>
+                                            <th>Q2 2022-2023</th>
+                                            <th colspan="2">Q3 2022-2023</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-end">Shares Held by Promoters</th>
+                                            <th class="text-end">Promoters % Shareholding</th>
+                                            <th class="text-end">Promoters % Shareholding</th>
+                                            <th class="text-end">Shares Held by Non Promoters</th>
+                                            <th class="text-end">Non Promoters % Shareholding</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Indian - Individuals & HUF</td>
+                                            <td class="text-end">30,451,585</td>
+                                            <td class="text-end">41.87%</td>
+                                            <td class="text-end">41.87%</td>
+                                            <td class="text-end">25,799,566</td>
+                                            <td class="text-end">35.47% <span class="text-green"><i
+                                                        class="bi bi-caret-up-fill"></i></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>NRI & Foreign Individuals</td>
+                                            <td class="text-end">0</td>
+                                            <td class="text-end">0.00%</td>
+                                            <td class="text-end">0.00%</td>
+                                            <td class="text-end">3,013,553</td>
+                                            <td class="text-end">4.14% <span class="text-red"><i
+                                                        class="bi bi-caret-down-fill"></i></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Government</td>
+                                            <td class="text-end">0</td>
+                                            <td class="text-end">0.00%</td>
+                                            <td class="text-end">0.00%</td>
+                                            <td class="text-end">5</td>
+                                            <td class="text-end">0.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Foreign Institutional Investors (FII)</td>
+                                            <td class="text-end">0</td>
+                                            <td class="text-end">0.00%</td>
+                                            <td class="text-end">0.00%</td>
+                                            <td class="text-end">2,652,801</td>
+                                            <td class="text-end">3.65% <span class="text-red"><i
+                                                        class="bi bi-caret-down-fill"></i></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Body Corporate</td>
+                                            <td class="text-end">0</td>
+                                            <td class="text-end">0.00%</td>
+                                            <td class="text-end">0.00%</td>
+                                            <td class="text-end">10,195,042</td>
+                                            <td class="text-end">14.01% <span class="text-green"><i
+                                                        class="bi bi-caret-up-fill"></i></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Others</td>
+                                            <td class="text-end">600,000</td>
+                                            <td class="text-end">0.82%</td>
+                                            <td class="text-end">0.82%</td>
+                                            <td class="text-end">23,319</td>
+                                            <td class="text-end">0.03% <span class="text-green"><i
+                                                        class="bi bi-caret-up-fill"></i></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-bold">Total Shares</td>
+                                            <td class="text-end fw-bold">31,051,585</td>
+                                            <td class="text-end fw-bold">42.69%</td>
+                                            <td class="text-end fw-bold">42.69%</td>
+                                            <td class="text-end fw-bold">41,684,286</td>
+                                            <td class="text-end fw-bold">57.30%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 shareallotment">
+                            <div class="shareallotment-title">
+                                Share Allotment History
+                            </div>
+                            <table class="table custom-table shareAllowtment">
+                                <thead>
+                                    <tr>
+                                        <th>Allotment Type</th>
+                                        <th>Instrument</th>
+                                        <th>Date of Allotment</th>
+                                        <th class="text-end">No of Shares Allotted</th>
+                                        <th class="text-end">Nominal AMT./Share</th>
+                                        <th class="text-end">Premium/ Share</th>
+                                        <th class="text-end">Discount/ Share</th>
+                                        <th class="text-end">Share Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cash</td>
+                                        <td>Equity Shares without Differential Rights</td>
+                                        <td>10/09/2009 <a href="#" class="d-block"><span class="pdf-red"><i
+                                                        class="bi bi-file-earmark-pdf-fill"></i></span> Download
+                                                Allottees</a></td>
+                                        <td class="text-end">6,035,871</td>
+                                        <td class="text-end">10.00</td>
+                                        <td class="text-end">491.00</td>
+                                        <td class="text-end">0.00</td>
+                                        <td class="text-end">501.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="preference" role="tabpanel" aria-labelledby="nav-preference-tab">
+                    <div class="row">
+                        <div class="col-md-12 shareallotment">
+                            <div class="shareallotment-title">
+                                Share Allotment History
+                            </div>
+                            <table class="table custom-table ">
+                                <thead>
+                                    <tr>
+                                        <th>Allotment Type</th>
+                                        <th>Instrument</th>
+                                        <th>Date of Allotment</th>
+                                        <th class="text-end">No of Shares Allotted</th>
+                                        <th class="text-end">Nominal AMT./Share</th>
+                                        <th class="text-end">Premium/ Share</th>
+                                        <th class="text-end">Discount/ Share</th>
+                                        <th class="text-end">Share Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="8" class="text-center">This company has not issued any Preference
+                                            share.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- profile Modal -->
+<div class="modal custom-modal fade" id="profile">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Shareholding Pattern</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>This section presents the information about Shareholding Pattern of the company for its Equity and
+                    Preferential share capital. It also shows distribution of shareholding for each category of share,
+                    based on the Category of shareholder groups. It also presents the share allotment history from FY
+                    2011-12 onwards.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- disclamber Modal -->
+<div class="modal custom-modal fade" id="disclaimer">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Shareholding Pattern</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>All Share Allotment details are available from 1st April, 2011.Shareholding details are displayed for the latest financial year.</p>
+
+            </div>
         </div>
     </div>
 </div>

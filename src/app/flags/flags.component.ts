@@ -10,7 +10,7 @@ export class FlagsComponent implements OnInit {
 
   public ngOnInit() {
     $('a[data-bs-toggle="collapse"]').click(function () {
-      $(this).find('.bi').toggleClass('bi bi-dash-square bi bi-dash-square');
+      $(this).find('.bi').toggleClass('bi bi-dash-square bi bi-flag');
       // $(this).closest("tr").find('i').toggleClass('bi bi-dash-square bi bi-dash-square');
     });
 
