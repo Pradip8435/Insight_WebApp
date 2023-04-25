@@ -15,12 +15,16 @@
         </div>
         <form action="">
             <div class="input-group">
-                <select name="" id="select_designatfirst">
-                    <option value="0" selected><i class="bi bi-search"></i> Company/LLP</option>
-                    <option value="1"> <i class="bi bi-search"></i>
-                        Director/Partner</option>
-                </select>
-                <input type="text" class="form-control" id="empSearch" placeholder="Search Company/LLP By Name"
+                <div class="btn-group">
+                    <button type="button" class="select-box" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-shop-window"></i><span class="line"></span>Company / LLP <i class="bi bi-chevron-down"></i>
+                    <span class="line me-0"></span></button>
+                    <ul class="dropdown-menu custom-select">
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-shop-window"></i>&nbsp; Company / LLP</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i>&nbsp; Director / Partner</a></li>
+                    </ul>
+                  </div>
+                <input type="text" class="form-control ps-0" id="empSearch" placeholder="Search Company / LLP By Name"
                     autocomplete="off">
                 <button class="btn">
                     <i class="bi bi-search"></i>
@@ -34,49 +38,177 @@
                     <i class="bi bi-search"></i>
                 </a>
             </li>
-            <li class="nav-item dropdown">
-                <a href="" class="nav-link" data-bs-toggle="dropdown">solution <i class="bi bi-chevron-down"></i></a>
-                <ul class="dropdown-menu custom-dropdown dropdown_animation">
-                    <li><a class="dropdown-item" href="#">explore</a></li>
-                    <li><a class="dropdown-item" href="#">gst anlyse</a></li>
-                    <li><a class="dropdown-item" href="#">monitor</a></li>
-                    <li><a class="dropdown-item" href="#">riskQ</a></li>
-                    <li><a class="dropdown-item" href="#">verify</a></li>
-                </ul>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="bi bi-bell"></i>
+                    <span class="notification-status"></span>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    History
+                <a class="nav-link">
+                    <i class="bi bi-moon"></i>
                 </a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Hi,Urmi <i
+                <a href="" class="nav-link" data-bs-toggle="dropdown"><i class="bi bi-grid"></i>&nbsp; solution <i
                         class="bi bi-chevron-down"></i></a>
+                <ul class="dropdown-menu solution_dropdown dropdown_animation">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="normal-card card-border-teal c-mb-10">
+                                    <div class="product-cards">
+                                      <div class="product-inner-bar">
+                                        <div class="p-inner-left">
+                                          <div class="eop-icon">
+                                            EX
+                                          </div>
+                                        </div>
+                                        <div class="p-inner-right">
+                                          <h6>Explore</h6>
+                                          <p>A granular query engine that improves sales and...</p>
+                                          <button type="button" class="btn btn-teal btn-teal-fill">Go to Explore</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="normal-card card-border-teal c-mb-10">
+                                    <div class="product-cards">
+                                      <div class="product-inner-bar">
+                                        <div class="p-inner-left">
+                                          <div class="eop-icon">
+                                            GST
+                                          </div>
+                                        </div>
+                                        <div class="p-inner-right">
+                                          <h6>GST Analyze</h6>
+                                          <p>Know your borrower’s business better through...</p>
+                                          <button type="button" class="btn btn-teal btn-teal-fill">Go to GST Analyze</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="normal-card card-border-teal c-mb-10">
+                                    <div class="product-cards ">
+                                      <div class="product-inner-bar">
+                                        <div class="p-inner-left">
+                                          <div class="eop-icon">
+                                            MN
+                                          </div>
+                                        </div>
+                                        <div class="p-inner-right">
+                                          <h6>Monitor</h6>
+                                          <p>A web-based tool that provides early warning signa...</p>
+                                          <button type="button" class="btn btn-teal btn-teal-fill">Go to Monitor</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="normal-card card-border-lightgray c-mb-10">
+                                    <div class="product-cards ">
+                                      <div class="product-inner-bar">
+                                        <div class="p-inner-left">
+                                          <div class="eop-icon-one">
+                                            RQ
+                                          </div>
+                                        </div>
+                                        <div class="p-inner-right">
+                                          <h6>RISQ</h6>
+                                          <p>A tool that tracks Assets Portfolio with continuous Ris...</p>
+                                          <button type="button" class="btn crp-custom-btn gray-btn">Subscribe</button>
+                                        </div>
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="normal-card card-border-lightgray c-mb-10">
+                                    <div class="product-cards ">
+                                      <div class="product-inner-bar">
+                                        <div class="p-inner-left">
+                                          <div class="eop-icon-one">
+                                            VE
+                                          </div>
+                                        </div>
+                                        <div class="p-inner-right">
+                                          <h6>Verify</h6>
+                                          <p>Know your Borrower better & protect the asset book from...</p>
+                                          <button type="button" class="btn crp-custom-btn gray-btn">Subscribe</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div><div class="col-md-4">
+                                <div class="normal-card card-border-lightgray c-mb-10">
+                                    <div class="product-cards ">
+                                      <div class="product-inner-bar">
+                                        <div class="p-inner-left">
+                                          <div class="eop-icon-one">
+                                            NP
+                                          </div>
+                                        </div>
+                                        <div class="p-inner-right">
+                                          <h6>New Product</h6>
+                                          <p>Lorem Ipsum is simply dummy text of the printing</p>
+                                          <button type="button" class="btn crp-custom-btn gray-btn">Subscribe</button>
+                                        </div>
+                                        <span id="pointer" class="shine">
+                                          <span>New</span>
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"><i class="bi bi-person"></i>&nbsp;
+                    Hi,Urmi <i class="bi bi-chevron-down"></i></a>
                 <ul class="dropdown-menu custom-dropdown dropdown_animation">
                     <div class="profile-header">
                         <div>
                             <div class="user-icon">
-                                <i class="bi bi-person"></i>
+                                UG
                             </div>
                             <div class="user-info">
-                                <span class="userName">Pradip</span>
-                                <span class="userMail">pradip.singh@corpository.com</span>
+                                <span class="userName">Urmi Gajjar</span>
+                                <span class="userMail">urmi.gajjar@corpository.com</span>
                             </div>
                         </div>
                         <div class="">
                             <a href=""><i class="bi bi-pencil-square"></i></a>
                         </div>
                     </div>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-eye"></i> Companies Viewed (44)</a></li>
                     <li><a class="dropdown-item" href="#"><i class="bi bi-gear"></i> <span>setting</span></a></li>
-                    <li><a class="dropdown-item" href="#"><i class="bi bi-layers"></i> <span>about us</span></a></li>
-                    <li><a class="dropdown-item" href="#"><i class="bi bi-file-text"></i> <span>terms and
-                                conditions</span></a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-envelope"></i> <span>contact us</span></a>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-chat-dots"></i> <span>feedback</span></a></li>
+                    
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
                     <li><a class="dropdown-item" href="#"><i class="bi bi-shield-check"></i> <span>privacy
                                 policy</span></a></li>
-                    <li><a class="dropdown-item" href="#"><i class="bi bi-envelope"></i> <span>contact us</span></a>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-file-text"></i> <span>terms and
+                        conditions</span></a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-layers"></i> <span>about us</span></a></li>
+                    <li>
+                        <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#"><i class="bi bi-chat-dots"></i> <span>feedback</span></a></li>
-                    <li><a class="dropdown-item" href="#"><i class="bi bi-power"></i> <span>signout</span></a></li>
+                    <button class="btn signOut-btn">Sign Out</button>
                 </ul>
             </li>
         </ul>
