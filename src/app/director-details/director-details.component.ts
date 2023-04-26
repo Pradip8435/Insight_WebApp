@@ -10,12 +10,12 @@ export class DirectorDetailsComponent {
   dataTable: any;
 
   ngAfterViewInit(): void{
-    var table = $('#directordetailstable').DataTable( {
-      responsive: true,
-      paging: false,
-      searching: false,
-      info:false
-  });
+  //   var table = $('#directordetailstable').DataTable( {
+  //     responsive: true,
+  //     paging: false,
+  //     searching: false,
+  //     info:false
+  // });
   }
   ngOnInit(): void {
 

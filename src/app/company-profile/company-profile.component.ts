@@ -1,6 +1,8 @@
 import { Component , OnInit} from '@angular/core';
 declare var bootstrap: any;
-import * as $ from 'jquery'
+// import * as $ from 'jquery'
+declare const $: any;
+
 
 @Component({
   selector: 'app-company-profile',
@@ -8,6 +10,8 @@ import * as $ from 'jquery'
   styleUrls: ['./company-profile.component.css']
 })
 export class CompanyProfileComponent implements OnInit {
+  dataTable: any;
+
   public ngOnInit() {
     $('.browse-btn').click(function(){
       $('.my-file').click();
@@ -21,9 +25,16 @@ export class CompanyProfileComponent implements OnInit {
 
 
     
-    $('#select_all').click(function(){
-        $('.check').prop('checked' , $(this).prop('checked'))
-    })
+    // $('#select_all').click(function(){
+    //     $('.check').prop('checked' , $(this).prop('checked'))
+    // })
+
+    var table = $('#old-name').DataTable( {
+      responsive: true,
+      paging: false,
+      searching: false,
+      info:false
+    });
 
     
   }

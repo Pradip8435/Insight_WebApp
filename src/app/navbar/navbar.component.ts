@@ -13,7 +13,6 @@ export class NavbarComponent {
       $("form").toggle()
     })
     $(".custom-select li a").click(function(){
-  
       $(".select-box").html($(this).text()+' <i class="bi bi-chevron-down"></i>');
       
     });

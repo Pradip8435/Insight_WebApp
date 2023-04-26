@@ -9,6 +9,14 @@
     font-size: 14px;
     margin-right: 8px;
 }
+.custom-select-dropdown .dropdown-item{
+    font-size: 14px;
+    cursor: pointer;
+}
+.custom-select-dropdown .dropdown-item.active{
+    background-color: #E9ECEF;
+    color: #212529;
+}
 .dropdown{
     display: inline-block;
 }

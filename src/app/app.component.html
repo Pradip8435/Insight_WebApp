@@ -111,8 +111,9 @@
             <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"  role="tab" >
                 <div class="icon">
                     <i class="bi bi-people"></i>
+                    <span class="new-tab-dot"></span>
                 </div>
-                <span class="text">consent</span>
+                <span class="text">consent <span class="new-tab">New</span></span>
             </a>
         </li>
     </div>
@@ -120,11 +121,9 @@
 
 <!-- ======= sidebar end here========== -->
 <div class="wrapper">
-    <div class="update-msg" id="update-msg" *ngIf="display">
+    <div class="update-msg" id="update-msg">
         <span>We are updating the information and will notify you soon.</span>
-        <span>
-            <a id="update-msg-close" (click)="HideShow()"><i class="bi bi-x-lg"></i></a>
-        </span>
+        
     </div>
     <app-master></app-master>
     <router-outlet></router-outlet>

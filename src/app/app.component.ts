@@ -9,11 +9,7 @@ import * as $ from 'jquery'
 
 export class AppComponent implements OnInit{
   title = 'CORPOSITORY INSIGHT';
-  display = true;
 
-  HideShow() {
-    this.display = !this.display
-  }
 
   public ngOnInit() {
     // 

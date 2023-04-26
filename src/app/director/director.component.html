@@ -7,9 +7,9 @@
                 <a href="#" data-bs-toggle="modal" data-bs-target="#profile" ><i class="bi bi-info-circle"></i></a>
                 <span class="AsOndate">As On : <span>03/03/2021</span></span>
             </div>
-            <div>
-                <button class="btn btn-teal btn-teal-outline"><i class="bi bi-arrow-clockwise"></i> Update Info</button>
-                <button class="btn btn-teal btn-teal-outline"><i class="bi bi-file-earmark-excel"></i> Export to Excel</button>
+            <div class="text-end">
+                <button class="btn crp-custom-btn btn-teal-outline"><i class="bi bi-arrow-clockwise"></i> Update Info</button>
+                <button class="btn crp-custom-btn btn-teal-outline"><i class="bi bi-file-earmark-excel"></i> Export to Excel</button>
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@
                         <tr>
                             <td class="">
                                 <div>
-                                    <a routerLink="../directorDetails">VYOMESH MAHIPATRAY SHAH</a>
+                                    <a [routerLink]="['directorDetails']">VYOMESH MAHIPATRAY SHAH</a>
                                     <small class="dob">(DOB: 15/11/1959)</small>
                                 </div>
                             </td>

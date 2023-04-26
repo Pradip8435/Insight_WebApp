@@ -9,9 +9,9 @@
                         class="bi bi-exclamation-triangle"></i></a>
                 <span class="AsOndate">As On : <span>03/03/2021</span></span>
             </div>
-            <div>
-                <button class="btn btn-red">Imp. Note</button>
-                <button class="btn btn-teal btn-teal-outline"><i class="bi bi-arrow-clockwise"></i> Update Info</button>
+            <div class="text-end">
+                <button class="btn crp-custom-btn btn-red">Imp. Note</button>
+                <button class="btn crp-custom-btn btn-teal-outline"><i class="bi bi-arrow-clockwise"></i> Update Info</button>
             </div>
         </div>
     </div>
@@ -142,7 +142,7 @@
                         </li>
                         <li>
                             <div class="list-details">Kindly place GST request to view further details.</div>
-                            <button class="btn btn-teal btn-teal-outline">Place GST Request</button>
+                            <button class="btn crp-custom-btn btn-teal-outline">Place GST Request</button>
                         </li>
                     </ul>
                 </div>
@@ -235,7 +235,7 @@
                     <h3>Research Reports</h3>
                 </div>
                 <div class="card-body">
-                    <a href="">View Details</a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#Research-report">View Details</a>
                 </div>
             </div>
         </div>
@@ -263,7 +263,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="exampleModalLabel">Disclaimer</h4>
+                <h2 class="modal-title" id="exampleModalLabel">Disclaimer</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -280,11 +280,11 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="exampleModalLabel">Old Company/LLP Names</h4>
+                <h2 class="modal-title" id="exampleModalLabel">Old Company/LLP Names</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <table class="table custom-table">
+                <table class="table custom-table" id="old-name">
                     <thead>
                         <tr>
                             <th>Sr. No.</th>
@@ -304,7 +304,7 @@
                             <td>L45200MH1989PLC050688</td>
                             <td>10/02/2007</td>
                             <td>10/10/2007</td>
-                            <td>Active</td>
+                            <td><span class="badge green-badge">Active</span></td>
                         </tr>
                         <tr>
                             <td class="text-center">2</td>
@@ -313,7 +313,7 @@
                             <td>L45200MH1989PLC050688</td>
                             <td>10/02/2007</td>
                             <td>31/05/2009</td>
-                            <td>Active</td>
+                            <td><span class="badge green-badge">Active</span></td>
                         </tr>
                         <tr>
                             <td class="text-center">3</td>
@@ -322,7 +322,7 @@
                             <td>L45200MH1989PLC050688</td>
                             <td>31/05/2009</td>
                             <td>30/10/2011</td>
-                            <td>Active</td>
+                            <td><span class="badge green-badge">Active</span></td>
                         </tr>
                         <tr>
                             <td class="text-center">4</td>
@@ -331,7 +331,7 @@
                             <td>L45200MH1989PLC050688</td>
                             <td>10/02/2007</td>
                             <td>-</td>
-                            <td>Active</td>
+                            <td><span class="badge green-badge">Active</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -398,6 +398,20 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Research Reports modal -->
+<div class="modal custom-modal fade" id="Research-report">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Research Reports</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="fw-style-italic text-center">We are unable to retrieve information at this moment.</p>
             </div>
         </div>
     </div>

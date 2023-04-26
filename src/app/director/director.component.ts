@@ -8,6 +8,7 @@ declare const $: any;
 })
 export class DirectorComponent {
   dataTable: any;
+directorDetails: string|any[]|null|undefined;
 
   ngAfterViewInit(): void{
     var table = $('#example').DataTable( {
