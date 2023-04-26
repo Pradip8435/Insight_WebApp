@@ -30,13 +30,16 @@
               "node_modules/datatables.net-dt/css/jquery.dataTables.css",
               "node_modules/datatables.net-responsive-dt/css/responsive.dataTables.css",
               "node_modules/bootstrap-icons/font/bootstrap-icons.css",
-              "src/assets/css/custom.css"            
+              "src/assets/css/custom.css",            
+              "src/assets/css/jquery.jConveyorTicker.css"            
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/datatables.net/js/jquery.dataTables.js",
-              "node_modules/datatables.net-responsive/js/dataTables.responsive.min.js"
+              "node_modules/datatables.net-responsive/js/dataTables.responsive.min.js",
+              "src/assets/js/jquery.jConveyorTicker.js"            
+
             ]
           },
           "configurations": {

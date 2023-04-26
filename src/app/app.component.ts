@@ -9,8 +9,9 @@ import * as $ from 'jquery'
 
 export class AppComponent implements OnInit{
   title = 'CORPOSITORY INSIGHT';
+  jConveyorTicker: any;
 
-
+  
   public ngOnInit() {
     // 
     $("#toggleside").click(function () {
@@ -25,6 +26,7 @@ export class AppComponent implements OnInit{
     select_designatfirst.on('change', function () {
       empSearch.attr('placeholder', 'Search ' + select_designatfirst.find(':selected').text());
     });
+    
 
   }
 }
