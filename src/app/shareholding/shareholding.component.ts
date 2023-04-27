@@ -23,7 +23,16 @@ export class ShareholdingComponent {
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
-    })  
+    }) ;
+    
+    $('#nav-preference-tab').click(function(){
+      $('.shareholding-equity-part').hide();
+      $('.shareholding-tabs').addClass('col-md-12');
+    });
+    $('#nav-equity-tab').click(function(){
+      $('.shareholding-equity-part').show();
+      $('.shareholding-tabs').removeClass('col-md-12');
+    })
   }
   ngOnInit(): void {
     

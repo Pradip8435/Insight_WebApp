@@ -17,7 +17,8 @@ export class AppComponent implements OnInit{
     $("#toggleside").click(function () {
       $(".sidebar").toggleClass("close");
       $("#toggleside").toggleClass("change");
-      $(".text").toggleClass('d-block')
+      $(".text").toggleClass('d-none');
+      $(".wrapper").toggleClass("m-left");
     });
 
     var select_designatfirst = $('#select_designatfirst'),

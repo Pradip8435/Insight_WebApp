@@ -1,15 +1,17 @@
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-12 title-section d-flex justify-content-between ">
             <div class="title-left-sec">
                 <i class="bi bi-building"></i>
                 <h2 class="tabs-name">director</h2>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#profile" ><i class="bi bi-info-circle"></i></a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#profile"><i class="bi bi-info-circle"></i></a>
                 <span class="AsOndate">As On : <span>03/03/2021</span></span>
             </div>
             <div class="text-end">
-                <button class="btn crp-custom-btn btn-teal-outline"><i class="bi bi-arrow-clockwise"></i> Update Info</button>
-                <button class="btn crp-custom-btn btn-teal-outline"><i class="bi bi-file-earmark-excel"></i> Export to Excel</button>
+                <button class="btn crp-custom-btn btn-teal-outline"><i class="bi bi-arrow-clockwise"></i> Update
+                    Info</button>
+                <button class="btn crp-custom-btn btn-teal-outline"><i class="bi bi-file-earmark-excel"></i> Export to
+                    Excel</button>
             </div>
         </div>
     </div>
@@ -65,13 +67,16 @@
                             </td>
                             <td>-</td>
                             <td>
-                                <strong class="text-danger">View
-                                    Disqualification
-                                    Remarks</strong><br>
-                                <strong class="small">DIN Status</strong>
-                                <small>Approved</small>
-                                <strong class="small">DSC Status</strong>
-                                <small>Active</small>
+                                <a href="#disqualification_remark" data-bs-toggle="modal"
+                                    data-bs-target="#disqualification_remark">
+                                    <strong class="text-danger">View
+                                        Disqualification
+                                        Remarks</strong>
+                                </a>
+                                <strong class="small d-block">DIN Status</strong>
+                                <small class="badge green-badge">Approved</small>
+                                <strong class="small d-block">DSC Status</strong>
+                                <small class="badge green-badge">Active</small>
                             </td>
                         </tr>
                         <tr>
@@ -126,10 +131,10 @@
                             </td>
                             <td>-</td>
                             <td>
-                                <strong class="small">DIN Status</strong>
-                                <small>Approved</small>
-                                <strong class="small">DSC Status</strong>
-                                <small>Active</small>
+                                <strong class="small d-block">DIN Status</strong>
+                                <small class="badge green-badge">Approved</small>
+                                <strong class="small d-block">DSC Status</strong>
+                                <small class="badge green-badge">Active</small>
                             </td>
                         </tr>
                         <tr>
@@ -158,10 +163,10 @@
                             </td>
                             <td>sketki188@ gmail.com</td>
                             <td>
-                                <strong class="small">DIN Status</strong>
-                                <small>Approved</small>
-                                <strong class="small">DSC Status</strong>
-                                <small>Active</small>
+                                <strong class="small d-block">DIN Status</strong>
+                                <small class="badge green-badge">Approved</small>
+                                <strong class="small d-block">DSC Status</strong>
+                                <small class="badge green-badge">Active</small>
                             </td>
                         </tr>
                         <tr>
@@ -190,10 +195,10 @@
                             </td>
                             <td>kartikruparel@ gmail.com</td>
                             <td>
-                                <strong class="small">DIN Status</strong>
-                                <small>Approved</small>
-                                <strong class="small">DSC Status</strong>
-                                <small>Active</small>
+                                <strong class="small d-block">DIN Status</strong>
+                                <small class="badge green-badge">Approved</small>
+                                <strong class="small d-block">DSC Status</strong>
+                                <small class="badge green-badge">Active</small>
                             </td>
                         </tr>
                         <tr>
@@ -222,10 +227,10 @@
                             </td>
                             <td>sunilacc@ yahoo.com</td>
                             <td>
-                                <strong class="small">DIN Status</strong>
-                                <small>Approved</small>
-                                <strong class="small">DSC Status</strong>
-                                <small>Expired on 29/07/2022</small>
+                                <strong class="small d-block">DIN Status</strong>
+                                <small class="badge green-badge">Approved</small>
+                                <strong class="small d-block">DSC Status</strong>
+                                <small class="">Expired on 29/07/2022</small>
                             </td>
                         </tr>
                         <tr>
@@ -308,8 +313,8 @@
                             </td>
                             <td>sunil.mago@ hubtown.co.in</td>
                             <td>
-                                <strong class="small">DSC Status</strong>
-                                <small>Active</small>
+                                <strong class="small d-block">DSC Status</strong>
+                                <small class="badge green-badge">Active</small>
                             </td>
                         </tr>
                         <tr>
@@ -338,8 +343,8 @@
                             </td>
                             <td>sadanand.lad@ hubtown.co.in</td>
                             <td>
-                                <strong class="small">DSC Status</strong>
-                                <small>Expired on 18/06/2022</small>
+                                <strong class="small d-block">DSC Status</strong>
+                                <small class="">Expired on 18/06/2022</small>
                             </td>
                         </tr>
                     </tbody>
@@ -358,7 +363,27 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>Information about the members on the Board of Directors and Key Management Personnel who are reported by the company as Signatories to MCA documents and their Directorships in other companies.</p>
+                <p>Information about the members on the Board of Directors and Key Management Personnel who are reported
+                    by the company as Signatories to MCA documents and their Directorships in other companies.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- profile Modal -->
+<div class="modal custom-modal fade" id="disqualification_remark">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Disqualification Remarks</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Disqualified u/s 164(2)(a) by ROC-Delhi from 01-11-16 to 31-10-21 for THE INSTALMENT SUPPLY LIMITED,
+                </p>
+                <p>Disqualified u/s 164(2)(a) by ROC-Delhi from 01-11-14 to 31-10-19 for THE INSTALMENT SUPPLY LIMITED,
+                </p>
+                <p>Disqualified u/s 164(2)(a) by ROC-Delhi from 01-11-15 to 31-10-20 for THE INSTALMENT SUPPLY LIMITED
+                </p>
             </div>
         </div>
     </div>

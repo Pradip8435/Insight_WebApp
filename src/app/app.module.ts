@@ -16,6 +16,7 @@ import { ShareholdingComponent } from './shareholding/shareholding.component';
 import { DirectorDetailsComponent } from './director-details/director-details.component';
 import { FlagsComponent } from './flags/flags.component';
 import { NewsComponent } from './news/news.component';
+import { AssociateComponent } from './associate/associate.component';
 
 
 const appRoutes:Routes =[
@@ -51,6 +52,9 @@ const appRoutes:Routes =[
   },
   {
     path: 'news',component: NewsComponent
+  },
+  {
+    path: 'associate',component: AssociateComponent
   }
 
 ]
@@ -69,7 +73,8 @@ const appRoutes:Routes =[
     ShareholdingComponent,
     DirectorDetailsComponent,
     FlagsComponent,
-    NewsComponent  
+    NewsComponent,
+    AssociateComponent  
   ],
   imports: [
     BrowserModule,
